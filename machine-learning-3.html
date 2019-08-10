@@ -54,38 +54,34 @@
 						
                             <section id="one">
                                     <div class="container">
-                                        <h3> Capitule 1. Machine Learning for "dummies" </h3>
+                                        <h3>  Capitule 3. Division of the dataset </h3>
                                         
                                             <p align="justify">
-                                                    
-                                                Pattern Recognition (PR) is the scientific field that has the aim of objects classification into classes 
-                                                (typically are two or three classes). There are four main tasks in PR, classification, regression, clustering,
-                                                 and recuperation. For this blog entry, we focus on the classification task. 
-												<br>
-												<br>
-                                                Classification and regression task belongs to supervised learning. So we are going to have two main subsets 
-                                                (i.e., training and testing).
-												<br>
-												<br>
-                                                A pattern is a set of attributes, so if we have a dataset of types of lemons, color and texture could be two 
-                                                attributes. The possible class for each pattern could be 0 and 1, where one means "is a lemon" and 0 "is not a lemon." The class is not an attribute!. 
-												<br>
-												<br>
-												The pipeline that most of the researchers follow to classify a dataset:                                         
-                                                <ol>
-                                                    <li>Have a Dataset, e.g., Iris dataset.</li>
-                                                    <li>Apply a technique to divide the dataset into two subsets ( i.e., training and testing).</li>
-                                                    <li>Training and testing the classifier with the subsets mentioned in step 2. </li>
-                                                    <li>Apply a performance metric such as accuracy to know the final performance of the classifier.</li>
-                                                </ol>
+                                                We need two main subsets before classification, i.e., training and testing. To obtain these subsets is
+                                                necessary to implement a technique as K-fold cross-validation stratified, Hold-Out stratified, or 
+                                                Leave One-Out.
                                                 <br>
-												<strong> TASK FOR YOU:</strong>
-												<br>
+                                                <br>
                                                 <ul>
-                                                    <li>Investigate the websites that have available and confidence datasets with classification task.</li>
-                                                    <li>Investigate the three main techniques that exist in Machine Learning to divide a dataset.</li>
-                                                    <li>Give another example of a performance metric. </li>
-                                                    <li>Identify the total number of patterns,  attributes, and classes of the Iris dataset. </li>
+                                                    <li>K-fold cross-validation stratified: The first step is stratified all the dataset. Second,  ordering aleatory 
+                                                        each class. Then, divide the dataset in K folds of the same size, K-1 folds constituted the training set, and 
+                                                        the rest formed the test set. The procedure is repeated K times. The elements that compose each K folds is per class. </li>
+
+                                                    <li>Hold-Out stratified:  The first step is stratified all the dataset. Second,  ordering aleatory each class. Then, 
+                                                        select (aleatory) the percent assigned for the training set; the rest will be the test set.</li>
+                                                        
+                                                    <li>Leave One-Out: This technique does not employ the randomness. It is a particular case of the K-fold cross-validation 
+                                                        technique, where the value of K is the total number of the instances (a.k.a patterns). </li>
+                                                </ul>
+                                                <br>
+                                                <br>  
+                                                TASK FOR YOU:
+                                                <ul>
+                                                    <li>Get the recent list of the magazines that belong to the Journal Citation Reports (JCR).</li>
+                                                    <li>Investigate in JCR papers the typical values that machine learning researches use for K-fold cross-validation
+                                                         (e.g., K=5) and Hold-Out.</li>
+                                                    <li>Which are the typical values for K-fold cross-validation and Hold-Out?</li>
+                                                    <li>Which division method is most common to use?</li>
                                                 </ul>
                                                 
                                             </p>
