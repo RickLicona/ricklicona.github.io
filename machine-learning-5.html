@@ -54,35 +54,44 @@
 						
                             <section id="one">
                                     <div class="container">
-                                        <h3>  Capitule 4. Handling missing values and outliers </h3>
+                                        <h3> Capitule 5. Perfomance metrics </h3>
                                         
                                             <p align="justify">
-                                                    In datasets, we can find missing values that can be denoted as as "?" , "Null," etc.  
-                                                    On the other hand, outliers are extreme or wrong values. An example is a temperature 
-                                                    value of 2000 degrees when typical temperatures are between 19 and 40 degrees.   
-                                                    <br>
                                                     
-                                                    Handling missing values:
-                                                    <ul>
-                                                        <li>Ignore.</li>
-                                                        <li>Delete or Replace all the column, but be careful with the existence of many missing values; 
-                                                            it can not be an appropriate technique. It is possible to replace a column using other dependent columns.</li>
-                                                        <li>Delete all the row.</li>
-                                                        <li>Replace the value, using statistics concepts like mean or variance.</li>
-                                                        <li>Work with them. It depends on the classifier.</li>
-                                                    </ul>
-                                                    <br>
-                                                    Handling outliers values: 
-                                                    <ul>
-                                                        <li>Ignore.</li>
-                                                        <li>Delete all the column.</li>
-                                                        <li>Delete all the row.</li>
-                                                        <li>Discretize them as "too high" or "too low." </li>
-                                                    </ul>
-                                                    
-                                                    
-                                                     
-                                                    
+                                                To measure the performance of a classifier is essential to know the phenomenon of the 
+                                                field that you want to merge with ML to choose the correct performance metric. For example,
+                                                in the Brain-Computer interface field and according to Dr. Lotte, a metric that he suggests 
+                                                is the area under the  ROC curve.  
+												<br>
+												<br>
+                                                A classical performance metric is the accuracy metric. Its function consists in counting the 
+                                                correct patterns classified, remembering that we have two main subsets, i.e., training and testing. 
+												<br>
+												<br>
+                                                All the performance metrics employ the values of the confusion matrix. The next figure is the 
+                                                confusion matrix for two classes.                                         
+                                                <br>
+                                                <br>
+                                                <div align="center"><img src="images/matrix_confusion.png" width="60%"></div>
+                                                <br>
+                                                <br>
+                                                The next equation denotes the accuracy metric.  
+                                                <br>
+                                                <br>
+                                                <div align="center"><img src="images/accuracy.png" width="30%"></div>
+                                                <br>
+                                                <br>
+                                                TPR (True Positive Rate ) and FPR (False Positive Rate) are denoted in the next equations. 
+                                                <br>
+                                                <br>
+                                                <div align="center"><img src="images/tpr_fpr.png" width="30%"></div>
+												<strong> THE TASK FOR YOU:</strong>
+												<br>
+                                                <ul>
+                                                    <li>Investigate which other performance metrics exist with its corresponding equation.</li>
+                                                    <li>Investigate the meaning of "False Positive" and "False Negative."</li>
+                                                    <li>Answer the next question and explain your answer: Is it correct to compare the metrics performance results?</li>
+                                                </ul>
                                                 
                                             </p>
                                             
