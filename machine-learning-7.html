@@ -88,34 +88,34 @@
 
                                                 <h1>##Gamma Framework v1.0</h1>
                                                 <br>
-                                                <p>Read Iris Dataset:</p>
+                                                <p style="color:dodgerblue">Read Iris Dataset:</p>
                                                 <pre><code>X=Gamma().read_dataset(website='UCI_Machine_Learning_Repository', dataset='iris')</code></pre>
-                                                <p>Separate data and labels:</p>
+                                                <p style="color:dodgerblue">Separate data and labels:</p>
                                                 <pre><code>X, y = Gamma().separate_data_and_labels(X)</code></pre>
-                                                <p>Comprobate if the dataset has missing values:</p>
+                                                <p style="color:dodgerblue">Comprobate if the dataset has missing values:</p>
                                                 <pre><code>Gamma().detect_missing_values(X, y)</code></pre>
-                                                <p>Know the total patterns of the dataset:</p>
+                                                <p style="color:dodgerblue">Know the total patterns of the dataset:</p>
                                                 <pre><code>Gamma().total_patterns(X)</code></pre>
-                                                <p>Apply the logarithmic scale (Pre-processing stept for Gamma):</p>
+                                                <p style="color:dodgerblue">Apply the logarithmic scale (Pre-processing stept for Gamma):</p>
                                                 <pre><code>X = Gamma.logarithmic_scale(X, exponent=0)</code></pre>
-                                                <p>Feature correlation:</p>
+                                                <p style="color:dodgerblue">Feature correlation:</p>
                                                 <pre><code>Gamma().feature_correlation(X)</code></pre>
-                                                <p>Hold-Out Stratified:</p>
+                                                <p style="color:dodgerblue">Hold-Out Stratified:</p>
                                                 <pre><code>X_train, X_valid, y_train, y_valid = Gamma().hold_out_stratified(X, y, train_size=0.7, test_size=0.3)</code></pre>
-                                                <p> Get patterns by class:</p>
+                                                <p style="color:dodgerblue"> Get patterns by class:</p>
                                                 <pre><code>test_class_1, test_class_2, test_class_3 = Gamma().get_patterns_by_class(y_valid, X_valid)</code></pre>
-                                                <p>Get the number of patterns by class:</p>
+                                                <p style="color:dodgerblue">Get the number of patterns by class:</p>
                                                 <pre><code>class1_n, class2_n, class3_n = Gamma().get_number_of_patterns_by_class(y_train)</code></pre>
-                                                <p>Prepare data:</p>
+                                                <p style="color:dodgerblue">Prepare data:</p>
                                                 <pre><code>train_patterns, X_test, number_of_patterns = Gamma().prepare_data(class1_n, patterns_c1, class2_n, patterns_c2,class3_n, patterns_c3, X_valid, y_valid)</code>
 
                                                     <code>data  = {'X_test':X_test,'train_patterns':train_patterns, 'number_of_patterns':number_of_patterns, 'theta':5}</code>
                                                 </pre>
-                                                <p>Classification:</p>
+                                                <p style="color:dodgerblue">Classification:</p>
                                                 <pre><code>acc, preds = Gamma().predict(**data)</code></pre>
-                                                <p>Confusion Matrix:</p>
+                                                <p style="color:dodgerblue">Confusion Matrix:</p>
                                                 <pre><code>Gamma().plot_confusion_matrix(preds, y_valid, names)</code></pre>
-                                                <p> Mean absolute error (mae):</p>
+                                                <p style="color:dodgerblue"> Mean absolute error (mae):</p>
                                                 <pre><code>Gamma().mean_absolute_error(preds, y_valid)</code></pre>
                                                 <br>
                                                 <p><strong>References:</strong></p>
