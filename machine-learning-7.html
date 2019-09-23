@@ -76,7 +76,7 @@
                                                 <img src="https://raw.githubusercontent.com/RickLicona/GammaClassifier/master/img/beta.png" width="46%">
                                                 <br>
                                                 The gamma hybrid operator is defined by:
-                                                <img src="https://raw.githubusercontent.com/RickLicona/GammaClassifier/master/img/gamma.png" width="48%">
+                                                <img src="https://raw.githubusercontent.com/RickLicona/GammaClassifier/master/img/gamma.png" width="50%">
                                                 <br>
                                                 The unary operator is defined by:
                                                 <br>
@@ -101,15 +101,9 @@
                                                 <p>Get the number of patterns by class:</p>
                                                 <pre><code>class1_n, class2_n, class3_n = Gamma().get_number_of_patterns_by_class(y_train)</code></pre>
                                                 <p>Prepare data:</p>
-                                                <pre><code>train_patterns, X_test, number_of_patterns = Gamma().prepare_data(class1_n,
-                                                                                                                patterns_c1,  
-                                                                                                                class2_n, 
-                                                                                                                patterns_c2,
-                                                                                                                class3_n, 
-                                                                                                                patterns_c3,
-                                                                                                                X_valid, 
-                                                                                                                y_valid)
-                                                data  = {'X_test':X_test,'train_patterns':train_patterns, 'number_of_patterns':number_of_patterns, 'theta':5}</code></pre>
+                                                <pre><code>train_patterns, X_test, number_of_patterns = Gamma().prepare_data(class1_n, patterns_c1, class2_n, patterns_c2,class3_n, patterns_c3, X_valid, y_valid)
+
+                                                           data  = {'X_test':X_test,'train_patterns':train_patterns, 'number_of_patterns':number_of_patterns, 'theta':5}</code></pre>
                                                 <p>Classification:</p>
                                                 <pre><code>acc, preds = Gamma().predict(**data)</code></pre>
                                                 <p>Confusion Matrix:</p>
