@@ -2105,20 +2105,21 @@ function CheckFinished(){
 
 <!-- EndTopNavButtons -->
 
+<div align="left">
+<h5>Audio</h5>
  <audio controls>
   <source src="audios/1.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
-</audio> </h2>
-
-
-
+</audio>
 </div>
 
-<div id="InstructionsDiv" class="StdDiv">
-</div>
 
-<div class="alert alert-primary shadow-lg p-3 mb-5 rounded" role="alert">	Time-approximately 35 minutes (including the reading of the directions for each part)
-  </div>
+<div class="alert alert-primary shadow-lg p-3 mb-5 rounded" role="alert"  align="center">	Time-approximately 35 minutes (including the reading of the directions for each part)
+<br>
+<br>
+<!-- Muestra score -->
+<div id="InstructionsDiv"> </div>
+</div>
 
 
 <div class="container">
@@ -2130,7 +2131,7 @@ Your browser does not support the audio element.
 		
 <div id="OneByOneReadout">
 <button class="btn btn-primary btn-lg " onclick="ChangeQ(-1); return false;">&lt;=</button>
-		
+<!-- Muestra el puto numerito -->
 <span id="QNumReadout" class="QNum">&nbsp;</span>
 		
 <button class="btn btn-primary btn-lg "  onclick="ChangeQ(1); return false;">=&gt;</button>
@@ -2139,12 +2140,12 @@ Your browser does not support the audio element.
 		
 </div>
  
-<ol class="container" id="Questions">
+<ol class="QuizQuestions" id="Questions">
 <li class="container" id="Q_0" style="display: none;">
 <div class="QuestionText">PART A</div>
 <ol class="MCAnswers">
 <li id="Q_0_0">
-<button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_0_0_Btn"  onclick="CheckMCAnswer(0,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Carla does not live very far away.
+<button class="btn btn-secondary"  id="Q_0_0_Btn"  onclick="CheckMCAnswer(0,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Carla does not live very far away.
 </li>
 <li id="Q_0_1">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_0_1_Btn"  onclick="CheckMCAnswer(0,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;What Carla said was unjust.
@@ -2157,8 +2158,7 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_1" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_1" style="display: none;">
 <div class="progress">
 	<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 2%" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
@@ -2177,8 +2177,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_2" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_2" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_2_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_2_0_Btn"  onclick="CheckMCAnswer(2,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He graduated last in his class.
@@ -2194,8 +2194,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_3" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_3" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_3_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_3_0_Btn"  onclick="CheckMCAnswer(3,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He thought the dress was so chic.
@@ -2211,8 +2211,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_4" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_4" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_4_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_4_0_Btn"  onclick="CheckMCAnswer(4,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Leave the car somewhere else.
@@ -2228,8 +2228,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_5" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_5" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_5_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_5_0_Btn"  onclick="CheckMCAnswer(5,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He does not like to hold too many books at one time.
@@ -2245,8 +2245,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_6" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_6" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_6_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_6_0_Btn"  onclick="CheckMCAnswer(6,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;It was incomplete.
@@ -2262,8 +2262,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_7" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_7" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_7_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_7_0_Btn"  onclick="CheckMCAnswer(7,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;She needs to use tne man's notes.
@@ -2279,8 +2279,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_8" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_8" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_8_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_8_0_Btn"  onclick="CheckMCAnswer(8,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;It's her birthday today.
@@ -2296,8 +2296,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_9" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_9" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_9_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_9_0_Btn"  onclick="CheckMCAnswer(9,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He took a quick trip.
@@ -2313,8 +2313,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_10" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_10" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_10_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_10_0_Btn"  onclick="CheckMCAnswer(10,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;She just left her sister's house.
@@ -2330,8 +2330,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_11" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_11" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_11_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_11_0_Btn"  onclick="CheckMCAnswer(11,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;She doesn't have time to ccmplete additional reports.
@@ -2347,8 +2347,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_12" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_12" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_12_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_12_0_Btn"  onclick="CheckMCAnswer(12,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He's had enough exercise.
@@ -2364,8 +2364,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_13" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_13" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_13_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_13_0_Btn"  onclick="CheckMCAnswer(13,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He cannot see the huge waves.
@@ -2381,8 +2381,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_14" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_14" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_14_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_14_0_Btn"  onclick="CheckMCAnswer(14,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;The exam was postponed.
@@ -2398,8 +2398,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_15" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_15" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_15_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_15_0_Btn"  onclick="CheckMCAnswer(15,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Students who want to change schedules should form a line.
@@ -2415,8 +2415,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_16" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_16" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_16_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_16_0_Btn"  onclick="CheckMCAnswer(16,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;In a mine.
@@ -2432,8 +2432,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_17" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_17" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_17_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_17_0_Btn"  onclick="CheckMCAnswer(17,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A visit to the woman's family.
@@ -2449,8 +2449,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_18" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_18" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_18_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_18_0_Btn"  onclick="CheckMCAnswer(18,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;She hasn't met her new boss yet.
@@ -2466,8 +2466,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_19" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_19" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_19_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_19_0_Btn"  onclick="CheckMCAnswer(19,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;The recital starts in three hours.
@@ -2483,8 +2483,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_20" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_20" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_20_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_20_0_Btn"  onclick="CheckMCAnswer(20,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Choose a new dentist.
@@ -2500,8 +2500,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_21" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_21" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_21_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_21_0_Btn"  onclick="CheckMCAnswer(21,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;It is almost five o'clock.
@@ -2517,8 +2517,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_22" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_22" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_22_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_22_0_Btn"  onclick="CheckMCAnswer(22,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;The article was placed on reserve.
@@ -2534,8 +2534,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_23" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_23" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_23_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_23_0_Btn"  onclick="CheckMCAnswer(23,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He needs to take a nap.
@@ -2551,8 +2551,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_24" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_24" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_24_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_24_0_Btn"  onclick="CheckMCAnswer(24,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;She doesn't think the news report is false.
@@ -2568,8 +2568,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_25" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_25" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_25_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_25_0_Btn"  onclick="CheckMCAnswer(25,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Management will offer pay raises on Friday.
@@ -2585,8 +2585,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_26" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_26" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_26_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_26_0_Btn"  onclick="CheckMCAnswer(26,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He doesn't believe that it is really snowing.
@@ -2602,8 +2602,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_27" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_27" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_27_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_27_0_Btn"  onclick="CheckMCAnswer(27,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;She's going to take the test over again.
@@ -2619,8 +2619,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_28" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_28" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_28_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_28_0_Btn"  onclick="CheckMCAnswer(28,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;The door was unlocked.
@@ -2636,8 +2636,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_29" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_29" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_29_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_29_0_Btn"  onclick="CheckMCAnswer(29,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He nailed the door shut.
@@ -2653,7 +2653,7 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_30" style="display: none;">
+<li class="container" id="Q_30" style="display: none;">
 <div class="QuestionText">PART B</div>
 <ol class="MCAnswers">
 <li id="Q_30_0">
@@ -2670,8 +2670,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_31" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_31" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_31_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_31_0_Btn"  onclick="CheckMCAnswer(31,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;It is just what he wanted. 
@@ -2687,8 +2687,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_32" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_32" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_32_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_32_0_Btn"  onclick="CheckMCAnswer(32,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A broken mirror.
@@ -2704,8 +2704,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_33" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_33" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_33_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_33_0_Btn"  onclick="CheckMCAnswer(33,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;You should become a hairstylist: predictions about the weather.
@@ -2721,8 +2721,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_34" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_34" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_34_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_34_0_Btn"  onclick="CheckMCAnswer(34,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Every evening.
@@ -2738,8 +2738,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_35" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_35" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_35_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_35_0_Btn"  onclick="CheckMCAnswer(35,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;That she was eighty-five years old.
@@ -2755,8 +2755,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_36" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_36" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_36_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_36_0_Btn"  onclick="CheckMCAnswer(36,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;In her bones.
@@ -2772,8 +2772,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_37" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_37" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_37_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_37_0_Btn"  onclick="CheckMCAnswer(37,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Call his great-grandmother less often.
@@ -2789,7 +2789,7 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_38" style="display: none;">
+<li class="container" id="Q_38" style="display: none;">
 <div class="QuestionText">PART C</div>
 <ol class="MCAnswers">
 <li id="Q_38_0">
@@ -2806,8 +2806,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_39" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_39" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_39_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_39_0_Btn"  onclick="CheckMCAnswer(39,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;It means they have big tears.
@@ -2823,8 +2823,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_40" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_40" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_40_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_40_0_Btn"  onclick="CheckMCAnswer(40,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;They are sad.
@@ -2840,8 +2840,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_41" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_41" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_41_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_41_0_Btn"  onclick="CheckMCAnswer(41,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Taking photographs.
@@ -2857,8 +2857,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_42" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_42" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_42_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_42_0_Btn"  onclick="CheckMCAnswer(42,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Water Sports.
@@ -2874,8 +2874,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_43" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_43" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_43_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_43_0_Btn"  onclick="CheckMCAnswer(43,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;To cut.
@@ -2891,8 +2891,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_44" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_44" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_44_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_44_0_Btn"  onclick="CheckMCAnswer(44,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;To bring tea from China.
@@ -2908,8 +2908,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_45" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_45" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_45_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_45_0_Btn"  onclick="CheckMCAnswer(45,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A reading assignment.
@@ -2925,8 +2925,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_46" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_46" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_46_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_46_0_Btn"  onclick="CheckMCAnswer(46,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Writers.
@@ -2942,8 +2942,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_47" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_47" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_47_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_47_0_Btn"  onclick="CheckMCAnswer(47,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He or she would see butterflies.
@@ -2959,8 +2959,8 @@ Your browser does not support the audio element.
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_48" style="display: none;">
-<div class="QuestionText">_</div>
+<li class="container" id="Q_48" style="display: none;">
+
 <ol class="MCAnswers">
 <li id="Q_48_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_48_0_Btn"  onclick="CheckMCAnswer(48,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;By staring at the audience.
@@ -2977,7 +2977,7 @@ Your browser does not support the audio element.
 </ol>
 </li>
 <li class="QuizQuestion" id="Q_49" style="display: none;">
-<div class="QuestionText">_</div>
+
 <ol class="MCAnswers">
 <li id="Q_49_0">
 <button class="FuncButton"  onfocus="FuncBtnOver(this)"  onblur="FuncBtnOut(this)"  onmouseover="FuncBtnOver(this)"  onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)"  onmouseup="FuncBtnOut(this)"  id="Q_49_0_Btn"  onclick="CheckMCAnswer(49,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;At two o'clock.
