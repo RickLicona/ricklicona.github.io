@@ -51,7 +51,7 @@ body{
 	font-family: Geneva,Arial,sans-serif;
 	background-color: #ffffff;
 	color: #000000;
-	font-size: 100%;
+	font-size: large;
 }
 
 p{
@@ -480,8 +480,8 @@ div.ShortAnswer{
 	border-top-color: #ddddf6;
 	border-right-color: #5d5d77;
 	border-bottom-color: #5d5d77;
-	color: #000000;
-	background-color: #bbbbee;
+	color: #f8f8f8;
+	background-color: #6c757d;
 
 	border-width: 2px;
 	padding: 3px 6px 3px 6px;
@@ -1060,7 +1060,7 @@ function Finish(){
 //JQUIZ CORE JAVASCRIPT CODE
 
 var CurrQNum = 0;
-var CorrectIndicator = ':-)';
+var CorrectIndicator = 'right';
 var IncorrectIndicator = 'X';
 var YourScoreIs = 'Your score is ';
 
@@ -1074,8 +1074,8 @@ var CorrectFirstTime = 'Questions answered correctly first time: ';
 var ShowCorrectFirstTime = false;
 var ShuffleQs = false;
 var ShuffleAs = false;
-var DefaultRight = 'Correct!';
-var DefaultWrong = 'Not perfect yet. Please try again.';
+var DefaultRight = 'Correct answer!';
+var DefaultWrong = 'Incorrect answer';
 var QsToShow = 53;
 var Score = 0;
 var Finished = false;
@@ -1800,7 +1800,8 @@ function CreateStatusArray(){
 
 
 
-function CheckMCAnswer(QNum, ANum, Btn){
+function CheckMCAnswer(QNum, ANum, Btn, BtnId){
+console.log("this is  %s", BtnId);
 //if question doesn't exist, bail
 	if (State[QNum].length < 1){return;}
 	
@@ -1839,6 +1840,7 @@ function CheckMCAnswer(QNum, ANum, Btn){
 
 //Mark the answer
 		Btn.innerHTML = IncorrectIndicator;
+		document.getElementById(BtnId).style.background='#C10000';
 		
 //Remove any previous score unless exercise is finished (6.0.3.8+)
 		if (Finished == false){
@@ -1871,8 +1873,10 @@ function CheckMCAnswer(QNum, ANum, Btn){
 	else{
 //It's right
 //Mark the answer
+//CAMBIAR COLOR CORRECTO, MANDAR ID BUTTON PARA CAMBIAR DE COLOR
 		Btn.innerHTML = CorrectIndicator;
-				
+		document.getElementById(BtnId).style.background='#00C175';
+		
 //Calculate the score for this question
 		CalculateMCQuestionScore(QNum);
 		
@@ -2100,12 +2104,11 @@ function CheckFinished(){
 	  </div>
 	</div>
   </nav>
-
-
-
 <!-- EndTopNavButtons -->
-
-<div class="alert alert-primary shadow-lg p-3 mb-5 rounded" role="alert"  align="center">	Time-approximately 35 minutes (including the reading of the directions for each part)
+<div class="alert alert-primary shadow-lg p-3 mb-5 rounded" role="alert"  align="center">
+Time-approximately 35 minutes (including the reading of the directions for each part)
+<br>
+<u>IMPORTANT: For this listening part, please click on "show all questions."</u>
 <br>
 <br>
 <!-- Muestra score -->
@@ -2117,7 +2120,7 @@ function CheckFinished(){
  
 <div id="QNav" class="QuestionNavigation">
 <p style="text-align: right;">
-<button id="ShowMethodButton" class="btn btn-primary btn-secondary" onclick="ShowHideQuestions(); return false;">Show all questions</button>
+<button id="ShowMethodButton" class="FuncButton" onclick="ShowHideQuestions(); return false;">Show all questions</button>
 </p>
 		
 <div id="OneByOneReadout">
@@ -2143,16 +2146,16 @@ function CheckFinished(){
 <div class="QuestionText">PART A</div>
 <ol class="MCAnswers">
 <li id="Q_0_0">
-<button class="btn btn-secondary"  id="Q_0_0_Btn"  onclick="CheckMCAnswer(0,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Carla does not live very far away.
+<button class="btn btn-secondary"  id="Q_0_0_Btn"  onclick="CheckMCAnswer(0,0,this, this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Carla does not live very far away.
 </li>
 <li id="Q_0_1">
-<button class="btn btn-secondary" id="Q_0_1_Btn"  onclick="CheckMCAnswer(0,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;What Carla said was unjust.
+<button class="btn btn-secondary" id="Q_0_1_Btn"  onclick="CheckMCAnswer(0,1,this, this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;What Carla said was unjust.
 </li>
 <li id="Q_0_2">
-<button class="btn btn-secondary"  id="Q_0_2_Btn"  onclick="CheckMCAnswer(0,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He does not fear what anyone says.
+<button class="btn btn-secondary"  id="Q_0_2_Btn"  onclick="CheckMCAnswer(0,2,this, this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He does not fear what anyone says.
 </li>
 <li id="Q_0_3">
-<button class="btn btn-secondary" id="Q_0_3_Btn"  onclick="CheckMCAnswer(0,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Carla is fairly rude to others.
+<button class="btn btn-secondary" id="Q_0_3_Btn"  onclick="CheckMCAnswer(0,3,this, this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Carla is fairly rude to others.
 </li>
 </ol>
 </li>
@@ -2369,7 +2372,7 @@ function CheckFinished(){
 <button class="btn btn-secondary" id="Q_13_0_Btn"  onclick="CheckMCAnswer(13,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He cannot see the huge waves.
 </li>
 <li id="Q_13_1">
-<button class="btn btn-secondary" id="Q_13_1_Btn"  onclick="CheckMCAnswer(13,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;(B) The waves are'not coming in.
+<button class="btn btn-secondary" id="Q_13_1_Btn"  onclick="CheckMCAnswer(13,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;The waves are'not coming in.
 </li>
 <li id="Q_13_2">
 <button class="btn btn-secondary" id="Q_13_2_Btn"  onclick="CheckMCAnswer(13,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;He would like the woman to repeat what she said.
@@ -3001,6 +3004,8 @@ function CheckFinished(){
 
 
 <div class="Feedback" id="FeedbackDiv">
+<!-- Aqui se pone el puto feedback -->
+
 <div class="FeedbackText" id="FeedbackContent"></div>
 <button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
 </div>
