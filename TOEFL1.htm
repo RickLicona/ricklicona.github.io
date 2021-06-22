@@ -185,11 +185,12 @@ select{
 }
 
 div.Feedback {
-	background-color: #e7e680;
+	background-color: #0a0a05;
 	left: 33%;
 	width: 34%;
 	top: 33%;
 	z-index: 1;
+
 	padding: 5px;
 	text-align: center;
 	color: #000033;
@@ -1073,7 +1074,7 @@ var ShowCorrectFirstTime = false;
 var ShuffleQs = false;
 var ShuffleAs = false;
 var DefaultRight = 'Correct answer!';
-var DefaultWrong = 'Incorrect answer';
+var DefaultWrong = 'Incorrect answer, try again!';
 var QsToShow = 53;
 var Score = 0;
 var Finished = false;
@@ -3006,7 +3007,7 @@ Time-approximately 35 minutes (including the reading of the directions for each 
 <div class="Feedback" id="FeedbackDiv">
 <!-- Aqui se pone el puto feedback -->
 
-<div class="FeedbackText" id="FeedbackContent"></div>
+<div class="FeedbackText alert alert-warning" id="FeedbackContent"></div>
 <button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
 </div>
 
