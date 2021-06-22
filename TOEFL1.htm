@@ -1861,7 +1861,7 @@ console.log("this is  %s", BtnId);
 //New for 6.2.2.1
 			var QsDone = CheckQuestionsCompleted();
 			if ((ContinuousScoring == true)||(Finished == true)){
-				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				//Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
 				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
 			}
 			else{
@@ -3004,7 +3004,7 @@ Time-approximately 35 minutes (including the reading of the directions for each 
 
 
 
-<div class="Feedback" id="FeedbackDiv">
+<div class="Feedback container" id="FeedbackDiv">
 <!-- Aqui se pone el puto feedback -->
 
 <div class="FeedbackText alert alert-warning" id="FeedbackContent"></div>
