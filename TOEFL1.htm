@@ -2083,13 +2083,13 @@ function CheckFinished(){
 
 </head>
 
-<body onload="StartUp()" id="TheBody" >
+<body onload="StartUp()" id="TheBody" onmousedown="return false" onselectstart="return false">
 <!--  Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
  
 <!-- BeginTopNavButtons -->
 
- <nav class="navbar navbar-expand-lg navbar-light shadow-lg p-3 mb-1 navbar-dark bg-dark">
+ <nav class="navbar navbar-expand-lg navbar-light shadow-lg p-3 mb-0 navbar-dark bg-dark">
 	<div class="container-fluid">
 	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -2102,9 +2102,8 @@ function CheckFinished(){
 		</div>
 	  </div>
 	</div>
-	<p class="badge rounded-pill bg-info text-dark text-end">Developed by Ricardo Licona</p>
   </nav>
-
+  <p class="text-end fs-6 bg-info text-white">Developed by Ricardo Licona</p>
 <!-- EndTopNavButtons -->
 <div class="alert alert-secondary shadow-lg p-3 mb-5 rounded" role="alert"  align="center">
 Time-approximately 35 minutes (including the reading of the directions for each part)
