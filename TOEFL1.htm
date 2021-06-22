@@ -1858,7 +1858,7 @@ console.log("this is  %s", BtnId);
 //New for 6.2.2.1
 			var QsDone = CheckQuestionsCompleted();
 			if ((ContinuousScoring == true)||(Finished == true)){
-				//Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
 				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
 			}
 			else{
@@ -1883,7 +1883,7 @@ console.log("this is  %s", BtnId);
 		if (ContinuousScoring == true){
 			CalculateOverallScore();
 			if ((ContinuousScoring == true)||(Finished == true)){
-				//Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
 				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
 			}
 		}
@@ -2243,13 +2243,10 @@ function CheckFinished(){
 //New for 6.2.2.0
 		FB += '<br />' + ExerciseCompleted;
 		
+		ShowMessage(FB)
 		WriteToInstructions(FB);
 		
 		Finished == true;
-
-
-
-
 		TimeOver = true;
 		Locked = true;
 		
