@@ -48,7 +48,7 @@ Your browser does not support the audio element.
 }
 
 body{
-	font-family: Geneva,Arial,sans-serif;
+	
 	background-color: #ffffff;
 	color: #000000;
 	font-size: x-large;
@@ -72,7 +72,6 @@ div.Titles{
 }
 
 button{
-	font-family: Geneva,Arial,sans-serif;
 	font-size: 100%;
 	display: inline;
 }
@@ -176,7 +175,6 @@ span.CorrectMark{
 }
 
 input, textarea{
-	font-family: Geneva,Arial,sans-serif;
 	font-size: 120%;
 }
 
@@ -393,7 +391,6 @@ div.Keypad{
 }
 
 div.Keypad button{
-	font-family: Geneva,Arial,sans-serif;
 	font-size: 120%;
 	background-color: #ffffff;
 	color: #000000;
@@ -413,7 +410,7 @@ div.QuestionNavigation{
 }
 
 textarea{
-	font-family: Geneva,Arial,sans-serif;
+
 }
 
 .QuestionText{
@@ -589,7 +586,6 @@ a:hover{
 
 div.CardStyle {
 	position: absolute;
-	font-family: Geneva,Arial,sans-serif;
 	font-size: 100%;
 	padding: 5px;
 	border-style: solid;
@@ -1064,13 +1060,14 @@ var IncorrectIndicator = 'X';
 var YourScoreIs = 'Your score is ';
 
 //New for 6.2.2.0
-var CompletedSoFar = 'Completed so far:';
-var ExerciseCompleted = 'You have completed the exercise.';
+var CompletedSoFar = 'Completed questions:';
+var ExerciseCompleted = 'You have completed the listening part.';
 var ShowCompletedSoFar = true;
 
 var ContinuousScoring = true;
 var CorrectFirstTime = 'Questions answered correctly first time: ';
-var ShowCorrectFirstTime = false;
+var ToeflScore = 'TOEFL Listening Score: ';
+var ShowCorrectFirstTime = true;
 var ShuffleQs = false;
 var ShuffleAs = false;
 var DefaultRight = 'Correct answer!';
@@ -2033,7 +2030,214 @@ function CheckFinished(){
 					}
 				}
 			}
+
 			FB += '<br />' + CorrectFirstTime + ' ' + CFT + '/' + QsToShow;
+			switch(CFT){
+				case 0:
+					score = 20;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 1:
+					score = 24;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 2:
+					score = 25;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;					
+				case 3:
+					score = 27;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;						
+				case 4:
+					score = 28;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 5:
+					score = 29;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 6:
+					score = 30;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 7:
+					score = 31;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 8:
+					score = 32;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;		
+				case 9:
+					score = 33;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 10:
+					score = 34;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 11:
+					score = 35;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;	
+				case 12:
+					score = 36;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 13:
+					score = 37;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 14:
+					score = 39;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;											
+				case 15:
+					score = 40;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 16:
+					score = 40;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 17:
+					score = 41;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 18:
+					score = 42;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 19:
+					score = 43;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 20:
+					score = 43;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;	
+				case 21:
+					score = 44;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 22:
+					score = 44;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 23:
+					score = 45;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 24:
+					score = 46;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 25:
+					score = 46;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 26:
+					score = 47;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;	
+				case 27:
+					score = 47;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 28:
+					score = 48;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;		
+				case 29:
+					score = 48;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 30:
+					score = 49;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 31:
+					score = 49;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;	
+				case 32:
+					score = 50;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 33:
+					score = 51;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 34:
+					score = 51;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;	
+				case 35:
+					score = 52;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 36:
+					score = 53;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 37:
+					score = 54;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;		
+				case 38:
+					score = 55;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 39:
+					score = 55;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 40:
+					score = 56;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;					
+				case 41:
+					score = 57;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 42:
+					score = 58;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 43:
+					score = 59;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;					
+				case 44:
+					score = 60;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 45:
+					score = 61;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 46:
+					score = 61;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 47:
+					score = 63;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 48:
+					score = 64;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 49:
+					score = 66;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 50:
+					score = 68;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+			}
 		}
 		
 //New for 6.2.2.0
@@ -2105,17 +2309,18 @@ function CheckFinished(){
   </nav>
   <p class="text-end fs-6 bg-info text-white">Developed by Ricardo Licona &#128526;</p>
 <!-- EndTopNavButtons -->
-<div class="alert alert-secondary shadow-lg p-3 mb-5" role="alert"  align="center">
+<div class="alert alert-secondary shadow-lg p-3 mb-0" role="alert"  align="center">
 Time-approximately 35 minutes (including the reading of the directions for each part)
 <br>
 <br>
 <u>IMPORTANT: For this listening part, please click on "show all questions."</u>
 <br>
 <br>
-<!-- Muestra score -->
-<div id="InstructionsDiv"> </div>
 </div>
+<!-- Muestra score -->
+<div id="InstructionsDiv" class="alert alert-warning text-start" role="alert">
 
+</div>
 
 <div class="container">
  
@@ -2968,7 +3173,7 @@ Time-approximately 35 minutes (including the reading of the directions for each 
 </li>
 </ol>
 </li>
-<li class="QuizQuestion" id="Q_49" style="display: none;">
+<li class="container" id="Q_49" style="display: none;">
 
 <ol class="MCAnswers">
 <li id="Q_49_0">
