@@ -51,7 +51,7 @@ body{
 	font-family: Geneva,Arial,sans-serif;
 	background-color: #ffffff;
 	color: #000000;
-	font-size: large;
+	font-size: larger;
 }
 
 p{
@@ -404,7 +404,7 @@ div.Keypad button{
 /* JQuiz styles */
 
 div.QuestionNavigation{
-	text-align: left;
+	text-align: center;
 }
 
 .QNum{
@@ -2123,14 +2123,7 @@ Time-approximately 35 minutes (including the reading of the directions for each 
 <button id="ShowMethodButton" class="FuncButton" onclick="ShowHideQuestions(); return false;">Show all questions</button>
 </p>
 		
-<div id="OneByOneReadout">
-<button class="btn btn-primary btn-secondary" onclick="ChangeQ(-1); return false;"> << </button>
-<!-- Muestra el puto numerito -->
-<span id="QNumReadout" class="QNum">&nbsp;</span>
-		
-<button class="btn btn-primary btn-secondary"  onclick="ChangeQ(1); return false;"> >> </button>
-<br />
-</div>
+
 <div align="right">
 	<h5>&nbsp;Audio</h5>
 	 <audio controls>
@@ -2995,7 +2988,14 @@ Time-approximately 35 minutes (including the reading of the directions for each 
 </ol>
 </li>
 </ol>
-
+<div id="OneByOneReadout" align="center">
+	<button class="btn btn-primary btn-secondary" onclick="ChangeQ(-1); return false;"> << </button>
+	<!-- Muestra el puto numerito -->
+	<span id="QNumReadout" class="QNum">&nbsp;</span>
+			
+	<button class="btn btn-primary btn-secondary"  onclick="ChangeQ(1); return false;"> >> </button>
+	<br />
+</div>
 
 
 
