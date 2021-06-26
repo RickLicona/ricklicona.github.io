@@ -1858,8 +1858,8 @@ console.log("this is  %s", BtnId);
 //New for 6.2.2.1
 			var QsDone = CheckQuestionsCompleted();
 			if ((ContinuousScoring == true)||(Finished == true)){
-				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
-				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+				//Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions('<br />' + QsDone);
 			}
 			else{
 				WriteToInstructions(QsDone);
@@ -1883,8 +1883,8 @@ console.log("this is  %s", BtnId);
 		if (ContinuousScoring == true){
 			CalculateOverallScore();
 			if ((ContinuousScoring == true)||(Finished == true)){
-				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
-				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+				//Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions( '<br />' + QsDone);
 			}
 		}
 		else{
@@ -2902,7 +2902,7 @@ Time-approximately 35 minutes (including the reading of the directions for each 
 
 <ol class="MCAnswers">
 <li id="Q_33_0">
-<button class="btn btn-secondary" id="Q_33_0_Btn"  onclick="CheckMCAnswer(33,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;You should become a hairstylist: predictions about the weather.
+<button class="btn btn-secondary" id="Q_33_0_Btn"  onclick="CheckMCAnswer(33,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;"You should become a hairstylist."
 </li>
 <li id="Q_33_1">
 <button class="btn btn-secondary" id="Q_33_1_Btn"  onclick="CheckMCAnswer(33,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;"Please put it back on."
