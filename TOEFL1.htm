@@ -29,6 +29,8 @@ Your browser does not support the audio element.
 
 <!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 
 
 <style type="text/css">
@@ -609,10 +611,15 @@ div.CardStyle {
 
 //<![CDATA[
 
-<!--
+//JQUERY 3
+$(document).ready(function(){
 
+    
+	myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
 
-
+});
 
 function Client(){
 //if not a DOM browser, hopeless
@@ -1071,7 +1078,7 @@ var ShowCorrectFirstTime = true;
 var ShuffleQs = false;
 var ShuffleAs = false;
 var DefaultRight = 'Correct answer!';
-var DefaultWrong = 'Incorrect answer, try again!';
+var DefaultWrong = 'Incorrect answer!';
 var QsToShow = 53;
 var Score = 0;
 var Finished = false;
@@ -1229,6 +1236,8 @@ function ShowSpecialReadingForQuestion(){
 		}
 	}
 }
+
+
 
 function SetQNumReadout(){
 	document.getElementById('QNumReadout').innerHTML = (CurrQNum+1) + ' / ' + QArray.length;
@@ -1859,7 +1868,8 @@ console.log("this is  %s", BtnId);
 			var QsDone = CheckQuestionsCompleted();
 			if ((ContinuousScoring == true)||(Finished == true)){
 				//Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
-				WriteToInstructions('<br />' + QsDone);
+				Feedback += '<br />' + QsDone;
+				WriteToInstructions(QsDone);
 			}
 			else{
 				WriteToInstructions(QsDone);
@@ -1884,7 +1894,8 @@ console.log("this is  %s", BtnId);
 			CalculateOverallScore();
 			if ((ContinuousScoring == true)||(Finished == true)){
 				//Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
-				WriteToInstructions( '<br />' + QsDone);
+				Feedback += '<br />' + QsDone;
+				WriteToInstructions(QsDone);
 			}
 		}
 		else{
@@ -2333,6 +2344,11 @@ Time-approximately 35 minutes (including the reading of the directions for each 
 	  <source src="audios/1.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 	</audio>
+	<!-- Button trigger modal boots-->
+	<br>
+	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+	See script
+  </button>
 </div>
 		
 </div>
@@ -3202,6 +3218,54 @@ Time-approximately 35 minutes (including the reading of the directions for each 
 </div>
 
 
+  
+  <!-- Modal boots-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-scrollable">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Script A</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<p class="mb-2">El baloncesto (del inglés basketball; de basket, 'canasta', y ball, 'pelota'),
+			básquetbol, básketball o simplemente básquet o básket,1​ es un deporte de equipo, jugado entre dos conjuntos 
+			 de cinco jugadores cada uno durante cuatro períodos o cuartos de diez2​ o doce minutos cada uno. El objetivo del
+			  equipo es anotar puntos introduciendo un balón por la canasta, un aro a 3,05 metros sobre la superficie de la pista de
+			   juego del que cuelga una red. La puntuación por cada canasta o cesta es de dos o tres puntos, dependiendo de la posición 
+			   desde la que se efectúa el tiro a canasta, o de uno, si se trata de un tiro libre por una falta de un jugador contrario. 
+			   El equipo ganador es el que obtiene el mayor número de puntos.</p>
+
+			<p class="fw-lighter mb-2">El contacto con la pelota se realiza con las manos. Los jugadores, también llamados baloncestistas, no pueden trasladarse sujetando la pelota, 
+			sino botándola contra el suelo. El equipo en posesión del balón o atacante, intenta anotar puntos mediante tiros, entradas a canasta o mates, 
+			mientras que el equipo defensor busca impedirlo robando la pelota o efectuando tapones. Cuando un tiro hacia la canasta fracasa, los jugadores 
+			de ambos equipos intentan atrapar el rebote.</p>
+			
+			<p>James Naismith, un profesor canadiense de educación física, inventó el baloncesto en 1891 en la YMCA de Springfield, Massachusetts, Estados Unidos. 
+			El deporte ganó rápidamente popularidad y se expandió por las universidades y colegios norteamericanos a principios del siglo XX.</p>
+			
+			<p class="fw-lighter mb-2">La Federación Internacional de Baloncesto (FIBA) surgió en 1932 y el deporte debutó en los Juegos Olímpicos de verano en 1936.
+			 En 1946 se fundó la principal liga profesional de los Estados Unidos, la National Basketball Association (NBA), donde se formaron grandes
+			  jugadores que contribuyeron a la creciente popularidad del baloncesto: Wilt Chamberlain y Bill Russell en los años 1960 y, posteriormente, 
+			  Kareem Abdul-Jabbar, Moses Malone, Larry Bird, Magic Johnson, Kobe Bryant, Michael Jordan y LeBron James, estos dos últimos considerados por
+			   muchos como los dos mejores jugadores de la historia.3​</p>
+			
+			<p class="mb-2">El baloncesto es uno de los deportes más practicados del mundo, con más de 450 millones de jugadores en 2013. Se juegan numerosas ligas y 
+			campeonatos en el mundo entero, sobre todo en Europa y más recientemente en Asia, donde el deporte ha despuntado en el siglo XXI. Las mujeres representan 
+			una buena parte de los practicantes, a pesar de una exposición menor en los medios del baloncesto femenino. Se han desarrollado algunas variantes, como el 
+			baloncesto en silla de ruedas para deportistas discapacitados, el streetball y el baloncesto 3x3. Existe una cultura específica surgida a partir del deporte que se
+			 expresa en la música, la literatura, el cine y los videojuegos.</p>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+  
+  
+  
 
 <div class="Feedback" id="FeedbackDiv">
 <!-- Aqui se pone el puto feedback -->
