@@ -2020,7 +2020,7 @@ function CheckFinished(){
 	
 //Report final score and submit if necessary
 		CalculateOverallScore();
-		FB = YourScoreIs + ' ' + Score + '%.';
+		//FB = YourScoreIs + ' ' + Score + '%.';
 		if (ShowCorrectFirstTime == true){
 			var CFT = 0;
 			for (QNum=0; QNum<State.length; QNum++){
@@ -2242,7 +2242,7 @@ function CheckFinished(){
 		
 //New for 6.2.2.0
 		FB += '<br />' + ExerciseCompleted;
-		
+
 		ShowMessage(FB)
 		WriteToInstructions(FB);
 		
