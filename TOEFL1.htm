@@ -621,7 +621,12 @@ $(document).ready(function(){
   //myModal.addEventListener('shown.bs.modal', function () {
   //myInput.focus()
 //})
-
+$("#hide").click(function(){
+    $("#trans_0").hide();
+  });
+	$("#btn_0").click(function(){
+    	$("#trans_0").show();
+  	});
 });
 
 function Client(){
@@ -2328,7 +2333,7 @@ Time-approximately 35 minutes (including the reading of the directions for each 
 <br>
 </div>
 <!-- Muestra score -->
-<div id="InstructionsDiv" class="alert alert-warning text-start" role="alert">
+<div id="InstructionsDiv" class="alert alert-success text-start" role="alert">
 
 </div>
 
@@ -2350,14 +2355,30 @@ Time-approximately 35 minutes (including the reading of the directions for each 
 	<br>
 	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
 	See script
-  </button>
+   </button>
 </div>
 		
 </div>
  
 <ol class="QuizQuestions" id="Questions">
 <li class="container" id="Q_0" style="display: none;">
-<div class="QuestionText">PART A</div>
+<div class="QuestionText">
+PART A  
+<br>
+<button type="button" id="btn_0" class="btn btn-primary position-relative">
+	See transcript
+	<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+	  <span class="visually-hidden">New alerts</span>
+	</span>
+</button>
+&nbsp
+<button id="hide" class="btn btn-secondary">Hide</button>
+
+<div id="trans_0" class="alert alert-warning fst-italic" style= "display:none;">
+	<p>A: Carla said that you were rather rude.</p>
+	<p>B: It's unnfair of her to sa)' that abollt me.</p>
+	<p>N: WHAT DOES THE MAN MEAN? </p>
+</div>
 <ol class="MCAnswers">
 <li id="Q_0_0">
 <button class="btn btn-secondary"  id="Q_0_0_Btn"  onclick="CheckMCAnswer(0,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Carla does not live very far away.
@@ -3264,7 +3285,7 @@ Time-approximately 35 minutes (including the reading of the directions for each 
 	  </div>
 	</div>
   </div>
-  
+  <!-- End Modal boots-->
   
   
   
