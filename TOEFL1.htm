@@ -621,11 +621,8 @@ $(document).ready(function(){
   //myModal.addEventListener('shown.bs.modal', function () {
   //myInput.focus()
 //})
-$("#hide").click(function(){
-    $("#trans_0").hide();
-  });
 	$("#btn_0").click(function(){
-    	$("#trans_0").show();
+    	$("#trans_0").fadeToggle("fast");
   	});
 });
 
@@ -2366,14 +2363,11 @@ Time-approximately 35 minutes (including the reading of the directions for each 
 PART A  
 <br>
 <button type="button" id="btn_0" class="btn btn-primary position-relative">
-	See transcript
+	See/hide transcript
 	<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
 	  <span class="visually-hidden">New alerts</span>
 	</span>
 </button>
-&nbsp
-<button id="hide" class="btn btn-secondary">Hide</button>
-
 <div id="trans_0" class="alert alert-warning fst-italic" style= "display:none;">
 	<p>A: Carla said that you were rather rude.</p>
 	<p>B: It's unnfair of her to sa)' that abollt me.</p>
@@ -2381,7 +2375,7 @@ PART A
 </div>
 <ol class="MCAnswers">
 <li id="Q_0_0">
-<button class="btn btn-secondary"  id="Q_0_0_Btn"  onclick="CheckMCAnswer(0,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Carla does not live very far away.
+<button class="btn  btn-secondary"  id="Q_0_0_Btn"  onclick="CheckMCAnswer(0,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Carla does not live very far away.
 </li>
 <li id="Q_0_1">
 <button class="btn btn-secondary" id="Q_0_1_Btn"  onclick="CheckMCAnswer(0,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;What Carla said was unjust.
