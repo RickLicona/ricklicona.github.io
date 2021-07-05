@@ -606,24 +606,247 @@ div.CardStyle {
 
 
 </style>
-
 <script type="text/javascript">
 
 //<![CDATA[
-
-//JQUERY 3
+	//putas
 //var myModal = document.getElementById('myModal')
 //var myInput = document.getElementById('myInput')
 
 $(document).ready(function(){
 
     
-  //myModal.addEventListener('shown.bs.modal', function () {
-  //myInput.focus()
+//myModal.addEventListener('shown.bs.modal', function () {
+//myInput.focus()
 //})
-	$("#btn_0").click(function(){
-    	$("#trans_0").fadeToggle("fast");
-  	});
+  	$("#btn_0").click(function(){
+	  $("#trans_0").fadeToggle("fast");
+
+	});
+	// SHOW TRANSCRIPTS ACCORDING TO QUESTION NUMBER
+	$("button").click(function(){
+		console.log(this.id)
+		var id_transcript = this.id;
+		switch (id_transcript) { 
+			// PART A
+			case 'transcript_0': 
+				$("#trans_0").fadeToggle("fast");
+				break;
+			case 'transcript_1': 
+				$("#trans_1").fadeToggle("fast");
+				break;	
+			case 'transcript_2': 
+				$("#trans_2").fadeToggle("fast");
+				break;
+			case 'transcript_3': 
+				$("#trans_3").fadeToggle("fast");
+				break;
+			case 'transcript_4': 
+				$("#trans_4").fadeToggle("fast");
+				break;
+			case 'transcript_5': 
+				$("#trans_5").fadeToggle("fast");
+				break;
+			case 'transcript_6': 
+				$("#trans_6").fadeToggle("fast");
+				break;
+			case 'transcript_7': 
+				$("#trans_7").fadeToggle("fast");
+				break;
+			case 'transcript_8': 
+				$("#trans_8").fadeToggle("fast");
+				break;
+			case 'transcript_9': 
+				$("#trans_9").fadeToggle("fast");
+				break;		
+			case 'transcript_10': 
+				$("#trans_10").fadeToggle("fast");
+				break;
+			case 'transcript_11': 
+				$("#trans_11").fadeToggle("fast");
+				break;	
+			case 'transcript_12': 
+				$("#trans_12").fadeToggle("fast");
+				break;
+			case 'transcript_13': 
+				$("#trans_13").fadeToggle("fast");
+				break;
+			case 'transcript_14': 
+				$("#trans_14").fadeToggle("fast");
+				break;
+			case 'transcript_15': 
+				$("#trans_15").fadeToggle("fast");
+				break;
+			case 'transcript_16': 
+				$("#trans_16").fadeToggle("fast");
+				break;
+			case 'transcript_17': 
+				$("#trans_17").fadeToggle("fast");
+				break;
+			case 'transcript_18': 
+				$("#trans_18").fadeToggle("fast");
+				break;
+			case 'transcript_19': 
+				$("#trans_19").fadeToggle("fast");
+				break;			
+			case 'transcript_20': 
+				$("#trans_20").fadeToggle("fast");
+				break;
+			case 'transcript_21': 
+				$("#trans_21").fadeToggle("fast");
+				break;	
+			case 'transcript_22': 
+				$("#trans_22").fadeToggle("fast");
+				break;
+			case 'transcript_23': 
+				$("#trans_23").fadeToggle("fast");
+				break;
+			case 'transcript_24': 
+				$("#trans_24").fadeToggle("fast");
+				break;
+			case 'transcript_25': 
+				$("#trans_25").fadeToggle("fast");
+				break;
+			case 'transcript_26': 
+				$("#trans_26").fadeToggle("fast");
+				break;
+			case 'transcript_27': 
+				$("#trans_27").fadeToggle("fast");
+				break;
+			case 'transcript_28': 
+				$("#trans_28").fadeToggle("fast");
+				break;
+			case 'transcript_29': 
+				$("#trans_29").fadeToggle("fast");
+				break;	
+			// PART B - 1	(SAME SCRIPT)
+			case 'transcript_30': 
+				$("#trans_30").fadeToggle("fast");
+				break;
+			case 'transcript_31': 
+				$("#trans_31").fadeToggle("fast");
+				break;	
+			case 'transcript_32': 
+				$("#trans_32").fadeToggle("fast");
+				break;
+			case 'transcript_33': 
+				$("#trans_33").fadeToggle("fast");
+				break;
+			// END PART B - 1
+			// PART B - 2 (SAME SCRIPT)
+			case 'transcript_34': 
+				$("#trans_34").fadeToggle("fast");
+				break;
+			case 'transcript_35': 
+				$("#trans_35").fadeToggle("fast");
+				break;
+			case 'transcript_36': 
+				$("#trans_36").fadeToggle("fast");
+				break;
+			case 'transcript_37': 
+				$("#trans_37").fadeToggle("fast");
+				break;
+			// END PART B - 2
+			// PART C - 1 (SAME SCRIPT)
+			case 'transcript_38': 
+				$("#trans_38").fadeToggle("fast");
+				break;
+			case 'transcript_39': 
+				$("#trans_39").fadeToggle("fast");
+				break;			
+			case 'transcript_40': 
+				$("#trans_40").fadeToggle("fast");
+				break;
+			case 'transcript_41': 
+				$("#trans_41").fadeToggle("fast");
+				break;	
+			// END PART C - 1
+			// PART C - 2 (SAME SCRIPT)
+			case 'transcript_42': 
+				$("#trans_42").fadeToggle("fast");
+				break;
+			case 'transcript_43': 
+				$("#trans_43").fadeToggle("fast");
+				break;
+			case 'transcript_44': 
+				$("#trans_44").fadeToggle("fast");
+				break;
+			case 'transcript_45': 
+				$("#trans_45").fadeToggle("fast");
+				break;
+			// END PART C - 2
+			// PART C - 3 (SAME SCRIPT)	
+			case 'transcript_46': 
+				$("#trans_46").fadeToggle("fast");
+				break;
+			case 'transcript_47': 
+				$("#trans_47").fadeToggle("fast");
+				break;
+			case 'transcript_48': 
+				$("#trans_48").fadeToggle("fast");
+				break;
+			case 'transcript_49': 
+				$("#trans_49").fadeToggle("fast");
+				break;	
+			// END PART C - 3			
+		}
+
+	});
+  $("#instructions").modal({backdrop: "static"});
+  $("#instructions").modal("show");
+  
+ /*$(document).on('keypress',function(e) {
+    if(e.which == 40) {
+        alert('You pressed enter!');
+		console.log('HOLA')
+    }
+  });*/
+
+/*
+//CHECAR ASCII DE TECLADO
+  $(document).keypress(function(event){
+      
+	  var key = (event.keyCode ? event.keyCode : event.which);
+	  var ch=String.fromCharCode(key)
+		  alert('You pressed key : ' +ch);    
+		  console.log(key)
+		
+	
+  });*/
+
+});
+$(document).keydown(function(e){
+
+//e.which is set by jQuery for those browsers that do not normally support e.keyCode.
+// flechas
+var keyCode = e.keyCode || e.which;
+/*
+if (keyCode == 38) 
+{ 
+   alert( "Up arrow key hit." );
+   return false;
+}
+
+if (keyCode == 40) 
+{ 
+   alert( "Down arrow key hit." );
+   return false;
+}
+*/
+if (keyCode == 37) 
+{ 
+   //alert( "Left arrow key hit." );
+   ChangeQ(-1);
+   return false;
+}
+
+if (keyCode == 39) 
+{ 
+   //alert( "Right arrow key hit." );
+   ChangeQ(1);
+   return false;
+}
+
 });
 
 function Client(){
@@ -2299,7 +2522,6 @@ function CheckFinished(){
 
 
 </head>
-
 <body onload="StartUp()" id="TheBody" onmousedown="return false" onselectstart="return false">
 <!--  Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
@@ -2321,14 +2543,6 @@ function CheckFinished(){
   </nav>
   <p class="text-end fs-6 bg-info text-white">Developed by Ricardo Licona &#128526;</p>
 <!-- EndTopNavButtons -->
-<div class="alert alert-secondary shadow-lg p-3 mb-0" role="alert"  align="center">
-Time-approximately 35 minutes (including the reading of the directions for each part)
-<br>
-<br>
-<u>IMPORTANT: For this listening part, please click on "show all questions."</u>
-<br>
-<br>
-</div>
 <!-- Muestra score -->
 <div id="InstructionsDiv" class="alert alert-success text-start" role="alert">
 
@@ -2348,11 +2562,6 @@ Time-approximately 35 minutes (including the reading of the directions for each 
 	  <source src="audios/1.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 	</audio>
-	<!-- Button trigger modal boots-->
-	<br>
-	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-	See script
-   </button>
 </div>
 		
 </div>
@@ -2362,8 +2571,8 @@ Time-approximately 35 minutes (including the reading of the directions for each 
 <div class="QuestionText">
 PART A  
 <br>
-<button type="button" id="btn_0" class="btn btn-primary position-relative">
-	See/hide transcript
+<button type="button" id="transcript_0" class="btn btn-primary position-relative">
+	See/hide A transcript
 	<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
 	  <span class="visually-hidden">New alerts</span>
 	</span>
@@ -2389,6 +2598,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_1" style="display: none;">
+	<div class="QuestionText">
+		<button type="button" id="transcript_1" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_1" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_1_0">
 <button class="btn btn-secondary" id="Q_1_0_Btn"  onclick="CheckMCAnswer(1,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;She thinks it's an improvement.
@@ -2405,7 +2626,20 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_2" style="display: none;">
-
+	<div class="QuestionText">
+		PART A  
+		<br>
+		<button type="button" id="transcript_2" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_2" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_2_0">
 <button class="btn btn-secondary" id="Q_2_0_Btn"  onclick="CheckMCAnswer(2,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;He graduated last in his class.
@@ -2422,6 +2656,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_3" style="display: none;">
+	<div class="QuestionText">
+		<button type="button" id="transcript_3" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_3" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 
 <ol class="MCAnswers">
 <li id="Q_3_0">
@@ -2439,6 +2685,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_4" style="display: none;">
+	<div class="QuestionText">
+		<button type="button" id="transcript_4" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_4" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 
 <ol class="MCAnswers">
 <li id="Q_4_0">
@@ -2456,7 +2714,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_5" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_5" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_5" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_5_0">
 <button class="btn btn-secondary" id="Q_5_0_Btn"  onclick="CheckMCAnswer(5,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;He does not like to hold too many books at one time.
@@ -2473,7 +2742,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_6" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_6" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_6" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_6_0">
 <button class="btn btn-secondary" id="Q_6_0_Btn"  onclick="CheckMCAnswer(6,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;It was incomplete.
@@ -2490,7 +2770,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_7" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_7" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_7" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_7_0">
 <button class="btn btn-secondary" id="Q_7_0_Btn"  onclick="CheckMCAnswer(7,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;She needs to use tne man's notes.
@@ -2507,7 +2798,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_8" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_8" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_8" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_8_0">
 <button class="btn btn-secondary" id="Q_8_0_Btn"  onclick="CheckMCAnswer(8,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;It's her birthday today.
@@ -2524,7 +2826,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_9" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_9" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_9" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_9_0">
 <button class="btn btn-secondary" id="Q_9_0_Btn"  onclick="CheckMCAnswer(9,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;He took a quick trip.
@@ -2541,7 +2854,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_10" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_10" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_10" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_10_0">
 <button class="btn btn-secondary" id="Q_10_0_Btn"  onclick="CheckMCAnswer(10,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;She just left her sister's house.
@@ -2558,7 +2882,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_11" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_11" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_11" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_11_0">
 <button class="btn btn-secondary" id="Q_11_0_Btn"  onclick="CheckMCAnswer(11,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;She doesn't have time to ccmplete additional reports.
@@ -2575,7 +2910,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_12" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_12" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_12" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_12_0">
 <button class="btn btn-secondary" id="Q_12_0_Btn"  onclick="CheckMCAnswer(12,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;He's had enough exercise.
@@ -2592,7 +2938,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_13" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_13" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_13" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_13_0">
 <button class="btn btn-secondary" id="Q_13_0_Btn"  onclick="CheckMCAnswer(13,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;He cannot see the huge waves.
@@ -2609,7 +2966,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_14" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_14" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_14" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_14_0">
 <button class="btn btn-secondary" id="Q_14_0_Btn"  onclick="CheckMCAnswer(14,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;The exam was postponed.
@@ -2626,7 +2994,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_15" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_15" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_15" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_15_0">
 <button class="btn btn-secondary" id="Q_15_0_Btn"  onclick="CheckMCAnswer(15,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Students who want to change schedules should form a line.
@@ -2643,7 +3022,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_16" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_16" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_16" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_16_0">
 <button class="btn btn-secondary" id="Q_16_0_Btn"  onclick="CheckMCAnswer(16,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;In a mine.
@@ -2660,7 +3050,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_17" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_17" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_17" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_17_0">
 <button class="btn btn-secondary" id="Q_17_0_Btn"  onclick="CheckMCAnswer(17,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;A visit to the woman's family.
@@ -2677,7 +3078,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_18" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_18" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_18" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_18_0">
 <button class="btn btn-secondary" id="Q_18_0_Btn"  onclick="CheckMCAnswer(18,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;She hasn't met her new boss yet.
@@ -2694,7 +3106,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_19" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_19" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_19" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_19_0">
 <button class="btn btn-secondary" id="Q_19_0_Btn"  onclick="CheckMCAnswer(19,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;The recital starts in three hours.
@@ -2711,7 +3134,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_20" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_20" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_20" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_20_0">
 <button class="btn btn-secondary" id="Q_20_0_Btn"  onclick="CheckMCAnswer(20,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Choose a new dentist.
@@ -2728,7 +3162,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_21" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_21" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_21" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_21_0">
 <button class="btn btn-secondary" id="Q_21_0_Btn"  onclick="CheckMCAnswer(21,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;It is almost five o'clock.
@@ -2745,7 +3190,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_22" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_22" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_22" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_22_0">
 <button class="btn btn-secondary" id="Q_22_0_Btn"  onclick="CheckMCAnswer(22,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;The article was placed on reserve.
@@ -2762,7 +3218,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_23" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_23" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_23" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_23_0">
 <button class="btn btn-secondary" id="Q_23_0_Btn"  onclick="CheckMCAnswer(23,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;He needs to take a nap.
@@ -2779,7 +3246,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_24" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_24" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_24" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_24_0">
 <button class="btn btn-secondary" id="Q_24_0_Btn"  onclick="CheckMCAnswer(24,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;She doesn't think the news report is false.
@@ -2796,7 +3274,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_25" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_25" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_25" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_25_0">
 <button class="btn btn-secondary" id="Q_25_0_Btn"  onclick="CheckMCAnswer(25,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Management will offer pay raises on Friday.
@@ -2813,7 +3302,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_26" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_26" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_26" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_26_0">
 <button class="btn btn-secondary" id="Q_26_0_Btn"  onclick="CheckMCAnswer(26,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;He doesn't believe that it is really snowing.
@@ -2830,7 +3330,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_27" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_27" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_27" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_27_0">
 <button class="btn btn-secondary" id="Q_27_0_Btn"  onclick="CheckMCAnswer(27,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;She's going to take the test over again.
@@ -2847,7 +3358,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_28" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_28" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_28" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_28_0">
 <button class="btn btn-secondary" id="Q_28_0_Btn"  onclick="CheckMCAnswer(28,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;The door was unlocked.
@@ -2864,7 +3386,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_29" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_29" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_29" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_29_0">
 <button class="btn btn-secondary" id="Q_29_0_Btn"  onclick="CheckMCAnswer(29,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;He nailed the door shut.
@@ -2881,7 +3414,22 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_30" style="display: none;">
-<div class="QuestionText">PART B</div>
+	<div class="QuestionText">
+		PART B   
+		<br>
+		Questions 31-34
+		<br>
+		<button type="button" id="transcript_30" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_30" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_30_0">
 <button class="btn btn-secondary" id="Q_30_0_Btn"  onclick="CheckMCAnswer(30,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;The haircut is unusually short.
@@ -2898,7 +3446,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_31" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_31" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_31" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_31_0">
 <button class="btn btn-secondary" id="Q_31_0_Btn"  onclick="CheckMCAnswer(31,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;It is just what he wanted. 
@@ -2915,7 +3474,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_32" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_32" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_32" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_32_0">
 <button class="btn btn-secondary" id="Q_32_0_Btn"  onclick="CheckMCAnswer(32,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;A broken mirror.
@@ -2932,7 +3502,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_33" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_33" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_33" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_33_0">
 <button class="btn btn-secondary" id="Q_33_0_Btn"  onclick="CheckMCAnswer(33,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;"You should become a hairstylist."
@@ -2949,7 +3530,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_34" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_34" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_34" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_34_0">
 <button class="btn btn-secondary" id="Q_34_0_Btn"  onclick="CheckMCAnswer(34,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Every evening.
@@ -2966,7 +3558,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_35" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_35" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_35" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_35_0">
 <button class="btn btn-secondary" id="Q_35_0_Btn"  onclick="CheckMCAnswer(35,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;That she was eighty-five years old.
@@ -2983,7 +3586,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_36" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_36" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_36" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_36_0">
 <button class="btn btn-secondary" id="Q_36_0_Btn"  onclick="CheckMCAnswer(36,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;In her bones.
@@ -3000,7 +3614,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_37" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_37" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_37" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_37_0">
 <button class="btn btn-secondary" id="Q_37_0_Btn"  onclick="CheckMCAnswer(37,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Call his great-grandmother less often.
@@ -3017,7 +3642,22 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_38" style="display: none;">
-<div class="QuestionText">PART C</div>
+	<div class="QuestionText">
+		PART C 
+		<br>
+		Questions 39-42
+		<br>
+		<button type="button" id="transcript_38" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_38" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_38_0">
 <button class="btn btn-secondary" id="Q_38_0_Btn"  onclick="CheckMCAnswer(38,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;In a car.
@@ -3034,7 +3674,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_39" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_39" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_39" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_39_0">
 <button class="btn btn-secondary" id="Q_39_0_Btn"  onclick="CheckMCAnswer(39,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;It means they have big tears.
@@ -3051,7 +3702,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_40" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_40" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_40" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_40_0">
 <button class="btn btn-secondary" id="Q_40_0_Btn"  onclick="CheckMCAnswer(40,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;They are sad.
@@ -3068,7 +3730,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_41" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_41" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_41" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_41_0">
 <button class="btn btn-secondary" id="Q_41_0_Btn"  onclick="CheckMCAnswer(41,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Taking photographs.
@@ -3085,7 +3758,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_42" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_42" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_42" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_42_0">
 <button class="btn btn-secondary" id="Q_42_0_Btn"  onclick="CheckMCAnswer(42,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Water Sports.
@@ -3102,7 +3786,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_43" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_43" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_43" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_43_0">
 <button class="btn btn-secondary" id="Q_43_0_Btn"  onclick="CheckMCAnswer(43,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;To cut.
@@ -3119,7 +3814,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_44" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_44" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_44" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_44_0">
 <button class="btn btn-secondary" id="Q_44_0_Btn"  onclick="CheckMCAnswer(44,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;To bring tea from China.
@@ -3136,7 +3842,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_45" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_45" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_45" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_45_0">
 <button class="btn btn-secondary" id="Q_45_0_Btn"  onclick="CheckMCAnswer(45,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;A reading assignment.
@@ -3153,7 +3870,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_46" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_46" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_46" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_46_0">
 <button class="btn btn-secondary" id="Q_46_0_Btn"  onclick="CheckMCAnswer(46,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Writers.
@@ -3170,7 +3898,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_47" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_47" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_47" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_47_0">
 <button class="btn btn-secondary" id="Q_47_0_Btn"  onclick="CheckMCAnswer(47,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;He or she would see butterflies.
@@ -3187,7 +3926,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_48" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_48" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_48" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_48_0">
 <button class="btn btn-secondary" id="Q_48_0_Btn"  onclick="CheckMCAnswer(48,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;By staring at the audience.
@@ -3204,7 +3954,18 @@ PART A
 </ol>
 </li>
 <li class="container" id="Q_49" style="display: none;">
-
+	<div class="QuestionText">
+		<button type="button" id="transcript_49" class="btn btn-primary position-relative">
+			See/hide A transcript
+			<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+			  <span class="visually-hidden">New alerts</span>
+			</span>
+		</button>
+		<div id="trans_49" class="alert alert-warning fst-italic" style= "display:none;">
+			<p>A: Carla said that you were rather rude.</p>
+			<p>B: It's unnfair of her to sa)' that abollt me.</p>
+			<p>N: WHAT DOES THE MAN MEAN? </p>
+		</div>
 <ol class="MCAnswers">
 <li id="Q_49_0">
 <button class="btn btn-secondary" id="Q_49_0_Btn"  onclick="CheckMCAnswer(49,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;At two o'clock.
@@ -3228,53 +3989,23 @@ PART A
 			
 	<button class="btn btn-primary btn-secondary"  onclick="ChangeQ(1); return false;"> >> </button>
 	<br />
-</div>
-
-
 
 </div>
-
-
-  
-  <!-- Modal boots-->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal boots-->
+  <div class="modal fade" id="instructions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-scrollable">
 	  <div class="modal-content">
 		<div class="modal-header">
-		  <h5 class="modal-title" id="exampleModalLabel">Script A</h5>
+		  <h5 class="modal-title" id="exampleModalLabel">Listening instructions</h5>
 		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		</div>
 		<div class="modal-body">
-			<p class="mb-2">El baloncesto (del inglés basketball; de basket, 'canasta', y ball, 'pelota'),
-			básquetbol, básketball o simplemente básquet o básket,1​ es un deporte de equipo, jugado entre dos conjuntos 
-			 de cinco jugadores cada uno durante cuatro períodos o cuartos de diez2​ o doce minutos cada uno. El objetivo del
-			  equipo es anotar puntos introduciendo un balón por la canasta, un aro a 3,05 metros sobre la superficie de la pista de
-			   juego del que cuelga una red. La puntuación por cada canasta o cesta es de dos o tres puntos, dependiendo de la posición 
-			   desde la que se efectúa el tiro a canasta, o de uno, si se trata de un tiro libre por una falta de un jugador contrario. 
-			   El equipo ganador es el que obtiene el mayor número de puntos.</p>
-
-			<p class="fw-lighter mb-2">El contacto con la pelota se realiza con las manos. Los jugadores, también llamados baloncestistas, no pueden trasladarse sujetando la pelota, 
-			sino botándola contra el suelo. El equipo en posesión del balón o atacante, intenta anotar puntos mediante tiros, entradas a canasta o mates, 
-			mientras que el equipo defensor busca impedirlo robando la pelota o efectuando tapones. Cuando un tiro hacia la canasta fracasa, los jugadores 
-			de ambos equipos intentan atrapar el rebote.</p>
-			
-			<p>James Naismith, un profesor canadiense de educación física, inventó el baloncesto en 1891 en la YMCA de Springfield, Massachusetts, Estados Unidos. 
-			El deporte ganó rápidamente popularidad y se expandió por las universidades y colegios norteamericanos a principios del siglo XX.</p>
-			
-			<p class="fw-lighter mb-2">La Federación Internacional de Baloncesto (FIBA) surgió en 1932 y el deporte debutó en los Juegos Olímpicos de verano en 1936.
-			 En 1946 se fundó la principal liga profesional de los Estados Unidos, la National Basketball Association (NBA), donde se formaron grandes
-			  jugadores que contribuyeron a la creciente popularidad del baloncesto: Wilt Chamberlain y Bill Russell en los años 1960 y, posteriormente, 
-			  Kareem Abdul-Jabbar, Moses Malone, Larry Bird, Magic Johnson, Kobe Bryant, Michael Jordan y LeBron James, estos dos últimos considerados por
-			   muchos como los dos mejores jugadores de la historia.3​</p>
-			
-			<p class="mb-2">El baloncesto es uno de los deportes más practicados del mundo, con más de 450 millones de jugadores en 2013. Se juegan numerosas ligas y 
-			campeonatos en el mundo entero, sobre todo en Europa y más recientemente en Asia, donde el deporte ha despuntado en el siglo XXI. Las mujeres representan 
-			una buena parte de los practicantes, a pesar de una exposición menor en los medios del baloncesto femenino. Se han desarrollado algunas variantes, como el 
-			baloncesto en silla de ruedas para deportistas discapacitados, el streetball y el baloncesto 3x3. Existe una cultura específica surgida a partir del deporte que se
-			 expresa en la música, la literatura, el cine y los videojuegos.</p>
+			<p class="fw-light mb-2 text-center">Time-approximately 35 minutes (including the reading of the directions for each part)</p>
+			<p class="fw-light mb-2 text-center">IMPORTANT: For this listening part, please click on "show all questions."</p>
+			<p class="fw-light mb-2 text-center">Puedes usar las flechas de tu teclado para cambiar de pregunta </p>
 		</div>
 		<div class="modal-footer">
-		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 		</div>
 	  </div>
 	</div>
