@@ -1310,7 +1310,7 @@ var CurrQNum = 0;
 var CorrectIndicator = 'right';
 var IncorrectIndicator = 'X';
 var YourScoreIs = 'Your score is ';
-
+var GoNextQuestion = 'Go to the next question!'
 //New for 6.2.2.0
 var CompletedSoFar = 'Completed questions:';
 var ExerciseCompleted = 'You have completed the listening part.';
@@ -2115,6 +2115,7 @@ console.log("this is  %s", BtnId);
 			if ((ContinuousScoring == true)||(Finished == true)){
 				//Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
 				Feedback += '<br />' + QsDone;
+				Feedback += '<br />' + GoNextQuestion;
 				WriteToInstructions(QsDone);
 			}
 			else{
@@ -2141,6 +2142,7 @@ console.log("this is  %s", BtnId);
 			if ((ContinuousScoring == true)||(Finished == true)){
 				//Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
 				Feedback += '<br />' + QsDone;
+				Feedback += '<br />' + GoNextQuestion;
 				WriteToInstructions(QsDone);
 			}
 		}
