@@ -792,8 +792,10 @@ $(document).ready(function(){
 		}
 
 	});
-  $("#instructions").modal({backdrop: "static"});
-  $("#instructions").modal("show");
+ 	$("#instructions").modal({backdrop: "static"});
+  	$("#instructions").modal("show");
+
+
   
  /*$(document).on('keypress',function(e) {
     if(e.which == 40) {
@@ -815,6 +817,14 @@ $(document).ready(function(){
   });*/
 
 });
+
+function Mensaje(Feedback){
+	$(".modal-body").html(" ");
+    $(".modal-body").append(Feedback);
+	$("#instructions3").modal("show");
+
+}
+
 $(document).keydown(function(e){
 
 //e.which is set by jQuery for those browsers that do not normally support e.keyCode.
@@ -833,6 +843,7 @@ if (keyCode == 40)
    return false;
 }
 */
+if (ShowingAllQuestions == false){
 if (keyCode == 37) 
 { 
    //alert( "Left arrow key hit." );
@@ -846,8 +857,12 @@ if (keyCode == 39)
    ChangeQ(1);
    return false;
 }
+}
+
 
 });
+
+
 
 function Client(){
 //if not a DOM browser, hopeless
@@ -2047,7 +2062,8 @@ console.log("this is  %s", BtnId);
 // is finished if defined by the user
 		if (strQuestionFinished.length > 0){Feedback += '<br />' + strQuestionFinished;}
 //Show the feedback
-		ShowMessage(Feedback);
+		//ShowMessage(Feedback);
+		Mensaje(Feedback);
 //New for 6.2.2.1: If you want to mark an answer as correct even when it's the final choice, uncomment this line.
 //		if (I[QNum][3][ANum][2] >= 1){Btn.innerHTML = CorrectIndicator;}else{Btn.innerHTML = IncorrectIndicator;}	
 		return;
@@ -2135,7 +2151,8 @@ console.log("this is  %s", BtnId);
 	Btn.style.display = 'inline';
 	
 //Finally, show the feedback	
-	ShowMessage(Feedback);
+	//ShowMessage(Feedback);
+	Mensaje(Feedback)
 	
 //Check whether all questions are now done
 	CheckFinished();
@@ -2482,7 +2499,8 @@ function CheckFinished(){
 //New for 6.2.2.0
 		FB += '<br />' + ExerciseCompleted;
 
-		ShowMessage(FB)
+		//ShowMessage(FB)
+		Mensaje(FB)
 		WriteToInstructions(FB);
 		
 		Finished == true;
@@ -2582,6 +2600,7 @@ PART A
 	<p>B: It's unnfair of her to sa)' that abollt me.</p>
 	<p>N: WHAT DOES THE MAN MEAN? </p>
 </div>
+</div>
 <ol class="MCAnswers">
 <li id="Q_0_0">
 <button class="btn  btn-secondary"  id="Q_0_0_Btn"  onclick="CheckMCAnswer(0,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Carla does not live very far away.
@@ -2610,6 +2629,7 @@ PART A
 			<p>B: It's unnfair of her to sa)' that abollt me.</p>
 			<p>N: WHAT DOES THE MAN MEAN? </p>
 		</div>
+	</div>
 <ol class="MCAnswers">
 <li id="Q_1_0">
 <button class="btn btn-secondary" id="Q_1_0_Btn"  onclick="CheckMCAnswer(1,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;She thinks it's an improvement.
@@ -2640,6 +2660,7 @@ PART A
 			<p>B: It's unnfair of her to sa)' that abollt me.</p>
 			<p>N: WHAT DOES THE MAN MEAN? </p>
 		</div>
+	</div>
 <ol class="MCAnswers">
 <li id="Q_2_0">
 <button class="btn btn-secondary" id="Q_2_0_Btn"  onclick="CheckMCAnswer(2,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;He graduated last in his class.
@@ -4021,6 +4042,24 @@ PART A
 <div class="FeedbackText alert alert-warning" id="FeedbackContent"></div>
 <button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
 </div>
+
+<!-- Modal boots-->
+<div class="modal fade" id="instructions3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-scrollable">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Listening instructions</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		</div>
+	  </div>
+	</div>
+  </div></div>
 
 <!-- BeginBottomNavButtons -->
 
