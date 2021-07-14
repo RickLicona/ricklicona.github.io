@@ -25,8 +25,7 @@ GRAMMAR SECTION
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="toefl/jquery.countdown.js"></script>
-<script type="text/javascript" src="toefl/jquery.simplePagination.js"></script>
-<script type="text/javascript" src="toefl/simplePagination.css"></script>
+
 
 <style type="text/css">
 
@@ -822,12 +821,6 @@ $(document).ready(function(){
   $("#startButton").click(function (e) {
 	$('#counter').start();
   });
-
-  $("#pagination").pagination({
-        items: 100,
-        itemsOnPage: 10,
-        cssStyle: 'light-theme'
-    });
 
 });
 
@@ -2507,21 +2500,21 @@ function CheckFinished(){
 <ol class="QuizQuestions" id="Questions">
 <li class="container" id="Q_0" style="display: none;">
 <div class="QuestionText">
-	<p class="text-center">STRUCTURE</p>
+	<h2 class="text-center">STRUCTURE</h2>
 	<br>
 	______ range in color from pale yellow to bright orange.</div>
 <ol class="MCAnswers">
 <li id="Q_0_0">
-<button class="btn  btn-secondary"    id="Q_0_0_Btn"  onclick="CheckMCAnswer(0,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Canaries which
+<button class="btn  btn-secondary"    id="Q_0_0_Btn"  onclick="CheckMCAnswer(0,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Canaries which
 </li>
 <li id="Q_0_1">
-<button class="btn  btn-secondary"    id="Q_0_1_Btn"  onclick="CheckMCAnswer(0,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Canaries
+<button class="btn  btn-secondary"    id="Q_0_1_Btn"  onclick="CheckMCAnswer(0,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Canaries
 </li>
 <li id="Q_0_2">
-<button class="btn  btn-secondary"    id="Q_0_2_Btn"  onclick="CheckMCAnswer(0,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;That canaries
+<button class="btn  btn-secondary"    id="Q_0_2_Btn"  onclick="CheckMCAnswer(0,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;That canaries
 </li>
 <li id="Q_0_3">
-<button class="btn  btn-secondary"    id="Q_0_3_Btn"  onclick="CheckMCAnswer(0,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Canaries that are
+<button class="btn  btn-secondary"    id="Q_0_3_Btn"  onclick="CheckMCAnswer(0,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Canaries that are
 </li>
 </ol>
 </li>
@@ -2529,16 +2522,16 @@ function CheckFinished(){
 <div class="QuestionText">______ of precious gems is determined by their hardness, color, and brilliance.</div>
 <ol class="MCAnswers">
 <li id="Q_1_0">
-<button class="btn  btn-secondary"    id="Q_1_0_Btn"  onclick="CheckMCAnswer(1,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;The valuable
+<button class="btn  btn-secondary"    id="Q_1_0_Btn"  onclick="CheckMCAnswer(1,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;The valuable
 </li>
 <li id="Q_1_1">
-<button class="btn  btn-secondary"    id="Q_1_1_Btn"  onclick="CheckMCAnswer(1,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;It is the value
+<button class="btn  btn-secondary"    id="Q_1_1_Btn"  onclick="CheckMCAnswer(1,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;It is the value
 </li>
 <li id="Q_1_2">
-<button class="btn  btn-secondary"    id="Q_1_2_Btn"  onclick="CheckMCAnswer(1,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;It is valuable
+<button class="btn  btn-secondary"    id="Q_1_2_Btn"  onclick="CheckMCAnswer(1,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;It is valuable
 </li>
 <li id="Q_1_3">
-<button class="btn  btn-secondary"    id="Q_1_3_Btn"  onclick="CheckMCAnswer(1,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;The value
+<button class="btn  btn-secondary"    id="Q_1_3_Btn"  onclick="CheckMCAnswer(1,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;The value
 </li>
 </ol>
 </li>
@@ -2546,16 +2539,16 @@ function CheckFinished(){
 <div class="QuestionText">______ a tornado spins in a counterclockwise direction in the northern hemisphere, it spins in the opposite direction in the southern hemisphere.</div>
 <ol class="MCAnswers">
 <li id="Q_2_0">
-<button class="btn  btn-secondary"    id="Q_2_0_Btn"  onclick="CheckMCAnswer(2,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;However
+<button class="btn  btn-secondary"    id="Q_2_0_Btn"  onclick="CheckMCAnswer(2,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;However
 </li>
 <li id="Q_2_1">
-<button class="btn  btn-secondary"    id="Q_2_1_Btn"  onclick="CheckMCAnswer(2,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Because of
+<button class="btn  btn-secondary"    id="Q_2_1_Btn"  onclick="CheckMCAnswer(2,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Because of
 </li>
 <li id="Q_2_2">
-<button class="btn  btn-secondary"    id="Q_2_2_Btn"  onclick="CheckMCAnswer(2,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Although
+<button class="btn  btn-secondary"    id="Q_2_2_Btn"  onclick="CheckMCAnswer(2,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Although
 </li>
 <li id="Q_2_3">
-<button class="btn  btn-secondary"    id="Q_2_3_Btn"  onclick="CheckMCAnswer(2,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;That
+<button class="btn  btn-secondary"    id="Q_2_3_Btn"  onclick="CheckMCAnswer(2,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;That
 </li>
 </ol>
 </li>
@@ -2563,16 +2556,16 @@ function CheckFinished(){
 <div class="QuestionText">The Caldecott Medal, ______ for the best children's picture book, is awarded each January.</div>
 <ol class="MCAnswers">
 <li id="Q_3_0">
-<button class="btn  btn-secondary"    id="Q_3_0_Btn"  onclick="CheckMCAnswer(3,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;a prize
+<button class="btn  btn-secondary"    id="Q_3_0_Btn"  onclick="CheckMCAnswer(3,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;a prize
 </li>
 <li id="Q_3_1">
-<button class="btn  btn-secondary"    id="Q_3_1_Btn"  onclick="CheckMCAnswer(3,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;which prize
+<button class="btn  btn-secondary"    id="Q_3_1_Btn"  onclick="CheckMCAnswer(3,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;which prize
 </li>
 <li id="Q_3_2">
-<button class="btn  btn-secondary"    id="Q_3_2_Btn"  onclick="CheckMCAnswer(3,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;is a prize which
+<button class="btn  btn-secondary"    id="Q_3_2_Btn"  onclick="CheckMCAnswer(3,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;is a prize which
 </li>
 <li id="Q_3_3">
-<button class="btn  btn-secondary"    id="Q_3_3_Btn"  onclick="CheckMCAnswer(3,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;is a prize
+<button class="btn  btn-secondary"    id="Q_3_3_Btn"  onclick="CheckMCAnswer(3,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;is a prize
 </li>
 </ol>
 </li>
@@ -2580,16 +2573,16 @@ function CheckFinished(){
 <div class="QuestionText">The horn of the rhinoceros consists of a cone of tight bundles of keratin ______ from the epidermis. </div>
 <ol class="MCAnswers">
 <li id="Q_4_0">
-<button class="btn  btn-secondary"    id="Q_4_0_Btn"  onclick="CheckMCAnswer(4,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;grow
+<button class="btn  btn-secondary"    id="Q_4_0_Btn"  onclick="CheckMCAnswer(4,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;grow
 </li>
 <li id="Q_4_1">
-<button class="btn  btn-secondary"    id="Q_4_1_Btn"  onclick="CheckMCAnswer(4,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;grows
+<button class="btn  btn-secondary"    id="Q_4_1_Btn"  onclick="CheckMCAnswer(4,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;grows
 </li>
 <li id="Q_4_2">
-<button class="btn  btn-secondary"    id="Q_4_2_Btn"  onclick="CheckMCAnswer(4,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;growing
+<button class="btn  btn-secondary"    id="Q_4_2_Btn"  onclick="CheckMCAnswer(4,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;growing
 </li>
 <li id="Q_4_3">
-<button class="btn  btn-secondary"    id="Q_4_3_Btn"  onclick="CheckMCAnswer(4,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;they grow
+<button class="btn  btn-secondary"    id="Q_4_3_Btn"  onclick="CheckMCAnswer(4,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;they grow
 </li>
 </ol>
 </li>
@@ -2597,16 +2590,16 @@ function CheckFinished(){
 <div class="QuestionText">Most species of heliotropes are weeds, ______ of them are cultivated.</div>
 <ol class="MCAnswers">
 <li id="Q_5_0">
-<button class="btn  btn-secondary"    id="Q_5_0_Btn"  onclick="CheckMCAnswer(5,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;some
+<button class="btn  btn-secondary"    id="Q_5_0_Btn"  onclick="CheckMCAnswer(5,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;some
 </li>
 <li id="Q_5_1">
-<button class="btn  btn-secondary"    id="Q_5_1_Btn"  onclick="CheckMCAnswer(5,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;but some
+<button class="btn  btn-secondary"    id="Q_5_1_Btn"  onclick="CheckMCAnswer(5,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;but some
 </li>
 <li id="Q_5_2">
-<button class="btn  btn-secondary"    id="Q_5_2_Btn"  onclick="CheckMCAnswer(5,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;for some species
+<button class="btn  btn-secondary"    id="Q_5_2_Btn"  onclick="CheckMCAnswer(5,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;for some species
 </li>
 <li id="Q_5_3">
-<button class="btn  btn-secondary"    id="Q_5_3_Btn"  onclick="CheckMCAnswer(5,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;some species
+<button class="btn  btn-secondary"    id="Q_5_3_Btn"  onclick="CheckMCAnswer(5,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;some species
 </li>
 </ol>
 </li>
@@ -2614,16 +2607,16 @@ function CheckFinished(){
 <div class="QuestionText">Thunder occurs as ______ through air, causing the heated air to expand and collide with layers of cooler air.<br /></div>
 <ol class="MCAnswers">
 <li id="Q_6_0">
-<button class="btn  btn-secondary"    id="Q_6_0_Btn"  onclick="CheckMCAnswer(6,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;an electrical charge
+<button class="btn  btn-secondary"    id="Q_6_0_Btn"  onclick="CheckMCAnswer(6,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;an electrical charge
 </li>
 <li id="Q_6_1">
-<button class="btn  btn-secondary"    id="Q_6_1_Btn"  onclick="CheckMCAnswer(6,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;passes an electrical charge
+<button class="btn  btn-secondary"    id="Q_6_1_Btn"  onclick="CheckMCAnswer(6,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;passes an electrical charge
 </li>
 <li id="Q_6_2">
-<button class="btn  btn-secondary"    id="Q_6_2_Btn"  onclick="CheckMCAnswer(6,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;the passing of an electrical charge
+<button class="btn  btn-secondary"    id="Q_6_2_Btn"  onclick="CheckMCAnswer(6,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;the passing of an electrical charge
 </li>
 <li id="Q_6_3">
-<button class="btn  btn-secondary"    id="Q_6_3_Btn"  onclick="CheckMCAnswer(6,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;an electrical charge passes
+<button class="btn  btn-secondary"    id="Q_6_3_Btn"  onclick="CheckMCAnswer(6,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;an electrical charge passes
 </li>
 </ol>
 </li>
@@ -2631,16 +2624,16 @@ function CheckFinished(){
 <div class="QuestionText">Researchers have long debated ______ Saturn's moon Titan contains hydrocarbon oceans and lakes.<br /></div>
 <ol class="MCAnswers">
 <li id="Q_7_0">
-<button class="btn  btn-secondary"    id="Q_7_0_Btn"  onclick="CheckMCAnswer(7,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;over it
+<button class="btn  btn-secondary"    id="Q_7_0_Btn"  onclick="CheckMCAnswer(7,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;over it
 </li>
 <li id="Q_7_1">
-<button class="btn  btn-secondary"    id="Q_7_1_Btn"  onclick="CheckMCAnswer(7,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;whether it
+<button class="btn  btn-secondary"    id="Q_7_1_Btn"  onclick="CheckMCAnswer(7,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;whether it
 </li>
 <li id="Q_7_2">
-<button class="btn  btn-secondary"    id="Q_7_2_Btn"  onclick="CheckMCAnswer(7,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;whether
+<button class="btn  btn-secondary"    id="Q_7_2_Btn"  onclick="CheckMCAnswer(7,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;whether
 </li>
 <li id="Q_7_3">
-<button class="btn  btn-secondary"    id="Q_7_3_Btn"  onclick="CheckMCAnswer(7,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;whether over
+<button class="btn  btn-secondary"    id="Q_7_3_Btn"  onclick="CheckMCAnswer(7,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;whether over
 </li>
 </ol>
 </li>
@@ -2648,16 +2641,16 @@ function CheckFinished(){
 <div class="QuestionText">Nimbostratus clouds are thick, dark grey clouds ______ forebode rain.</div>
 <ol class="MCAnswers">
 <li id="Q_8_0">
-<button class="btn  btn-secondary"    id="Q_8_0_Btn"  onclick="CheckMCAnswer(8,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;what
+<button class="btn  btn-secondary"    id="Q_8_0_Btn"  onclick="CheckMCAnswer(8,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;what
 </li>
 <li id="Q_8_1">
-<button class="btn  btn-secondary"    id="Q_8_1_Btn"  onclick="CheckMCAnswer(8,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;which
+<button class="btn  btn-secondary"    id="Q_8_1_Btn"  onclick="CheckMCAnswer(8,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;which
 </li>
 <li id="Q_8_2">
-<button class="btn  btn-secondary"    id="Q_8_2_Btn"  onclick="CheckMCAnswer(8,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;what they
+<button class="btn  btn-secondary"    id="Q_8_2_Btn"  onclick="CheckMCAnswer(8,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;what they
 </li>
 <li id="Q_8_3">
-<button class="btn  btn-secondary"    id="Q_8_3_Btn"  onclick="CheckMCAnswer(8,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;which they
+<button class="btn  btn-secondary"    id="Q_8_3_Btn"  onclick="CheckMCAnswer(8,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;which they
 </li>
 </ol>
 </li>
@@ -2665,16 +2658,16 @@ function CheckFinished(){
 <div class="QuestionText">______ in several early civilizations, a cubit was based on the length of the forearm from the tip of the middle finger to the elbow.</div>
 <ol class="MCAnswers">
 <li id="Q_9_0">
-<button class="btn  btn-secondary"    id="Q_9_0_Btn"  onclick="CheckMCAnswer(9,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp; It was used as a measurement
+<button class="btn  btn-secondary"    id="Q_9_0_Btn"  onclick="CheckMCAnswer(9,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp; It was used as a measurement
 </li>
 <li id="Q_9_1">
-<button class="btn  btn-secondary"    id="Q_9_1_Btn"  onclick="CheckMCAnswer(9,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;A measurement was used
+<button class="btn  btn-secondary"    id="Q_9_1_Btn"  onclick="CheckMCAnswer(9,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;A measurement was used
 </li>
 <li id="Q_9_2">
-<button class="btn  btn-secondary"    id="Q_9_2_Btn"  onclick="CheckMCAnswer(9,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;The use of a measurement
+<button class="btn  btn-secondary"    id="Q_9_2_Btn"  onclick="CheckMCAnswer(9,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;The use of a measurement
 </li>
 <li id="Q_9_3">
-<button class="btn  btn-secondary"    id="Q_9_3_Btn"  onclick="CheckMCAnswer(9,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Used as a measurement
+<button class="btn  btn-secondary"    id="Q_9_3_Btn"  onclick="CheckMCAnswer(9,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Used as a measurement
 </li>
 </ol>
 </li>
@@ -2682,16 +2675,16 @@ function CheckFinished(){
 <div class="QuestionText">Only when air and water seep through its outer coat ______.</div>
 <ol class="MCAnswers">
 <li id="Q_10_0">
-<button class="btn  btn-secondary"    id="Q_10_0_Btn"  onclick="CheckMCAnswer(10,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;does a seed germinate
+<button class="btn  btn-secondary"    id="Q_10_0_Btn"  onclick="CheckMCAnswer(10,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;does a seed germinate
 </li>
 <li id="Q_10_1">
-<button class="btn  btn-secondary"    id="Q_10_1_Btn"  onclick="CheckMCAnswer(10,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;to the germination of a seed
+<button class="btn  btn-secondary"    id="Q_10_1_Btn"  onclick="CheckMCAnswer(10,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;to the germination of a seed
 </li>
 <li id="Q_10_2">
-<button class="btn  btn-secondary"    id="Q_10_2_Btn"  onclick="CheckMCAnswer(10,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;a seed germinates
+<button class="btn  btn-secondary"    id="Q_10_2_Btn"  onclick="CheckMCAnswer(10,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;a seed germinates
 </li>
 <li id="Q_10_3">
-<button class="btn  btn-secondary"    id="Q_10_3_Btn"  onclick="CheckMCAnswer(10,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;for a seed to germinate
+<button class="btn  btn-secondary"    id="Q_10_3_Btn"  onclick="CheckMCAnswer(10,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;for a seed to germinate
 </li>
 </ol>
 </li>
@@ -2699,16 +2692,16 @@ function CheckFinished(){
 <div class="QuestionText">______ seasonal rainfall, especially in regions near the tropics, is winds that blow in an opposite direction in winter than in summer.</div>
 <ol class="MCAnswers">
 <li id="Q_11_0">
-<button class="btn  btn-secondary"    id="Q_11_0_Btn"  onclick="CheckMCAnswer(11,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Causing
+<button class="btn  btn-secondary"    id="Q_11_0_Btn"  onclick="CheckMCAnswer(11,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;Causing
 </li>
 <li id="Q_11_1">
-<button class="btn  btn-secondary"    id="Q_11_1_Btn"  onclick="CheckMCAnswer(11,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;That cause
+<button class="btn  btn-secondary"    id="Q_11_1_Btn"  onclick="CheckMCAnswer(11,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;That cause
 </li>
 <li id="Q_11_2">
-<button class="btn  btn-secondary"    id="Q_11_2_Btn"  onclick="CheckMCAnswer(11,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;To cause
+<button class="btn  btn-secondary"    id="Q_11_2_Btn"  onclick="CheckMCAnswer(11,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;To cause
 </li>
 <li id="Q_11_3">
-<button class="btn  btn-secondary"    id="Q_11_3_Btn"  onclick="CheckMCAnswer(11,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;What causes
+<button class="btn  btn-secondary"    id="Q_11_3_Btn"  onclick="CheckMCAnswer(11,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;What causes
 </li>
 </ol>
 </li>
@@ -2716,16 +2709,16 @@ function CheckFinished(){
 <div class="QuestionText">The extinct Martian volcano Olympus Mons is approximately three times as ______ Mount Everest.</div>
 <ol class="MCAnswers">
 <li id="Q_12_0">
-<button class="btn  btn-secondary"    id="Q_12_0_Btn"  onclick="CheckMCAnswer(12,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;high
+<button class="btn  btn-secondary"    id="Q_12_0_Btn"  onclick="CheckMCAnswer(12,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;high
 </li>
 <li id="Q_12_1">
-<button class="btn  btn-secondary"    id="Q_12_1_Btn"  onclick="CheckMCAnswer(12,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;high as is
+<button class="btn  btn-secondary"    id="Q_12_1_Btn"  onclick="CheckMCAnswer(12,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;high as is
 </li>
 <li id="Q_12_2">
-<button class="btn  btn-secondary"    id="Q_12_2_Btn"  onclick="CheckMCAnswer(12,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;higher than
+<button class="btn  btn-secondary"    id="Q_12_2_Btn"  onclick="CheckMCAnswer(12,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;higher than
 </li>
 <li id="Q_12_3">
-<button class="btn  btn-secondary"    id="Q_12_3_Btn"  onclick="CheckMCAnswer(12,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;the highest of
+<button class="btn  btn-secondary"    id="Q_12_3_Btn"  onclick="CheckMCAnswer(12,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;the highest of
 </li>
 </ol>
 </li>
@@ -2733,16 +2726,16 @@ function CheckFinished(){
 <div class="QuestionText">The flight instructor, ______ at the air base, said that orders not to fight had been given.</div>
 <ol class="MCAnswers">
 <li id="Q_13_0">
-<button class="btn  btn-secondary"    id="Q_13_0_Btn"  onclick="CheckMCAnswer(13,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;when interviewed
+<button class="btn  btn-secondary"    id="Q_13_0_Btn"  onclick="CheckMCAnswer(13,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;when interviewed
 </li>
 <li id="Q_13_1">
-<button class="btn  btn-secondary"    id="Q_13_1_Btn"  onclick="CheckMCAnswer(13,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;when he interviewed
+<button class="btn  btn-secondary"    id="Q_13_1_Btn"  onclick="CheckMCAnswer(13,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;when he interviewed
 </li>
 <li id="Q_13_2">
-<button class="btn  btn-secondary"    id="Q_13_2_Btn"  onclick="CheckMCAnswer(13,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;when his interview
+<button class="btn  btn-secondary"    id="Q_13_2_Btn"  onclick="CheckMCAnswer(13,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;when his interview
 </li>
 <li id="Q_13_3">
-<button class="btn  btn-secondary"    id="Q_13_3_Btn"  onclick="CheckMCAnswer(13,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;when interviewing
+<button class="btn  btn-secondary"    id="Q_13_3_Btn"  onclick="CheckMCAnswer(13,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;when interviewing
 </li>
 </ol>
 </li>
@@ -2750,36 +2743,45 @@ function CheckFinished(){
 <div class="QuestionText">In the northern and central parts of the state of Idaho ______ and churning rivers.</div>
 <ol class="MCAnswers">
 <li id="Q_14_0">
-<button class="btn  btn-secondary"    id="Q_14_0_Btn"  onclick="CheckMCAnswer(14,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;majestic mountains are found
+<button class="btn  btn-secondary"    id="Q_14_0_Btn"  onclick="CheckMCAnswer(14,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;majestic mountains are found
 </li>
 <li id="Q_14_1">
-<button class="btn  btn-secondary"    id="Q_14_1_Btn"  onclick="CheckMCAnswer(14,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;found majestic mountains
+<button class="btn  btn-secondary"    id="Q_14_1_Btn"  onclick="CheckMCAnswer(14,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;found majestic mountains
 </li>
 <li id="Q_14_2">
-<button class="btn  btn-secondary"    id="Q_14_2_Btn"  onclick="CheckMCAnswer(14,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;are found majestic mountains
+<button class="btn  btn-secondary"    id="Q_14_2_Btn"  onclick="CheckMCAnswer(14,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;are found majestic mountains
 </li>
 <li id="Q_14_3">
-<button class="btn  btn-secondary"    id="Q_14_3_Btn"  onclick="CheckMCAnswer(14,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;finding majestic mountains
+<button class="btn  btn-secondary"    id="Q_14_3_Btn"  onclick="CheckMCAnswer(14,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;finding majestic mountains
 </li>
 </ol>
 </li>
 <li class="container" id="Q_15" style="display: none;">
 <div class="QuestionText">
-	<p class="text-center">WRITTEN EXPRESSION</p>
+	<h2 class="text-center">WRITTEN EXPRESSION</h2>
+	<button type="button" id="transcript_16" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_16" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1">N: Listen as a man and woman discuss a
+	</div>
 	<br>
 	<strong>(A) Light</strong> can <strong>(B) travels</strong> from the Sun to the Earth <strong>(C) in </strong> eight minutes and twenty <strong>(D) seconds.</strong><br /></div>
 <ol class="MCAnswers">
 <li id="Q_15_0">
-<button class="btn  btn-secondary"    id="Q_15_0_Btn"  onclick="CheckMCAnswer(15,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_15_0_Btn"  onclick="CheckMCAnswer(15,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_15_1">
-<button class="btn  btn-secondary"    id="Q_15_1_Btn"  onclick="CheckMCAnswer(15,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_15_1_Btn"  onclick="CheckMCAnswer(15,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_15_2">
-<button class="btn  btn-secondary"    id="Q_15_2_Btn"  onclick="CheckMCAnswer(15,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_15_2_Btn"  onclick="CheckMCAnswer(15,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_15_3">
-<button class="btn  btn-secondary"    id="Q_15_3_Btn"  onclick="CheckMCAnswer(15,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_15_3_Btn"  onclick="CheckMCAnswer(15,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -2787,16 +2789,16 @@ function CheckFinished(){
 <div class="QuestionText">Every human <strong>(A) typically </strong><strong>(B) have</strong> twenty-three pairs of chromosomes in <strong>(C) most</strong> <strong>(D) cells.</strong></div>
 <ol class="MCAnswers">
 <li id="Q_16_0">
-<button class="btn  btn-secondary"    id="Q_16_0_Btn"  onclick="CheckMCAnswer(16,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_16_0_Btn"  onclick="CheckMCAnswer(16,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_16_1">
-<button class="btn  btn-secondary"    id="Q_16_1_Btn"  onclick="CheckMCAnswer(16,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_16_1_Btn"  onclick="CheckMCAnswer(16,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_16_2">
-<button class="btn  btn-secondary"    id="Q_16_2_Btn"  onclick="CheckMCAnswer(16,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_16_2_Btn"  onclick="CheckMCAnswer(16,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_16_3">
-<button class="btn  btn-secondary"    id="Q_16_3_Btn"  onclick="CheckMCAnswer(16,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_16_3_Btn"  onclick="CheckMCAnswer(16,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -2804,16 +2806,16 @@ function CheckFinished(){
 <div class="QuestionText"><strong>(A) Most</strong> sedimentary rocks <strong>(B) start forming</strong> when grains of clay, silt, or <strong>(C) sandy</strong> settle in river valleys <strong>(D) or on </strong>the bottoms of lakes and oceans.</div>
 <ol class="MCAnswers">
 <li id="Q_17_0">
-<button class="btn  btn-secondary"    id="Q_17_0_Btn"  onclick="CheckMCAnswer(17,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_17_0_Btn"  onclick="CheckMCAnswer(17,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_17_1">
-<button class="btn  btn-secondary"    id="Q_17_1_Btn"  onclick="CheckMCAnswer(17,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_17_1_Btn"  onclick="CheckMCAnswer(17,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_17_2">
-<button class="btn  btn-secondary"    id="Q_17_2_Btn"  onclick="CheckMCAnswer(17,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_17_2_Btn"  onclick="CheckMCAnswer(17,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_17_3">
-<button class="btn  btn-secondary"    id="Q_17_3_Btn"  onclick="CheckMCAnswer(17,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_17_3_Btn"  onclick="CheckMCAnswer(17,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -2821,16 +2823,16 @@ function CheckFinished(){
 <div class="QuestionText">The total thickness of the ventricular <strong>(A) walls</strong> of the heart <strong>(B) are </strong><strong>(C) about</strong> three times <strong>(D) that</strong> of the atria.</div>
 <ol class="MCAnswers">
 <li id="Q_18_0">
-<button class="btn  btn-secondary"    id="Q_18_0_Btn"  onclick="CheckMCAnswer(18,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_18_0_Btn"  onclick="CheckMCAnswer(18,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_18_1">
-<button class="btn  btn-secondary"    id="Q_18_1_Btn"  onclick="CheckMCAnswer(18,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_18_1_Btn"  onclick="CheckMCAnswer(18,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_18_2">
-<button class="btn  btn-secondary"    id="Q_18_2_Btn"  onclick="CheckMCAnswer(18,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_18_2_Btn"  onclick="CheckMCAnswer(18,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_18_3">
-<button class="btn  btn-secondary"    id="Q_18_3_Btn"  onclick="CheckMCAnswer(18,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_18_3_Btn"  onclick="CheckMCAnswer(18,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -2838,16 +2840,16 @@ function CheckFinished(){
 <div class="QuestionText">The type of jazz <strong>(A) known </strong>as "swing" was <strong>(B) introduced</strong> by Duke Ellington when <strong>(C) he</strong> wrote and <strong>(D) records</strong> "It Don't Mean a Thing If It Ain't Got That Swing."</div>
 <ol class="MCAnswers">
 <li id="Q_19_0">
-<button class="btn  btn-secondary"    id="Q_19_0_Btn"  onclick="CheckMCAnswer(19,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_19_0_Btn"  onclick="CheckMCAnswer(19,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_19_1">
-<button class="btn  btn-secondary"    id="Q_19_1_Btn"  onclick="CheckMCAnswer(19,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_19_1_Btn"  onclick="CheckMCAnswer(19,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_19_2">
-<button class="btn  btn-secondary"    id="Q_19_2_Btn"  onclick="CheckMCAnswer(19,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_19_2_Btn"  onclick="CheckMCAnswer(19,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_19_3">
-<button class="btn  btn-secondary"    id="Q_19_3_Btn"  onclick="CheckMCAnswer(19,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_19_3_Btn"  onclick="CheckMCAnswer(19,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -2855,16 +2857,16 @@ function CheckFinished(){
 <div class="QuestionText">The bones of mammals, not <strong>(A) alike</strong><strong>  (B) those </strong>of the <strong>(C) other </strong>vertebrates, show a high degree of <strong>(D)differentiation.</strong></div>
 <ol class="MCAnswers">
 <li id="Q_20_0">
-<button class="btn  btn-secondary"    id="Q_20_0_Btn"  onclick="CheckMCAnswer(20,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_20_0_Btn"  onclick="CheckMCAnswer(20,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_20_1">
-<button class="btn  btn-secondary"    id="Q_20_1_Btn"  onclick="CheckMCAnswer(20,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_20_1_Btn"  onclick="CheckMCAnswer(20,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_20_2">
-<button class="btn  btn-secondary"    id="Q_20_2_Btn"  onclick="CheckMCAnswer(20,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_20_2_Btn"  onclick="CheckMCAnswer(20,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_20_3">
-<button class="btn  btn-secondary"    id="Q_20_3_Btn"  onclick="CheckMCAnswer(20,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_20_3_Btn"  onclick="CheckMCAnswer(20,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -2872,16 +2874,16 @@ function CheckFinished(){
 <div class="QuestionText"><strong>(A) The</strong> neocortex has <strong>(B) evolved</strong> more recently <strong>(C) then</strong> <strong>(D) other</strong> layers of the brain.</div>
 <ol class="MCAnswers">
 <li id="Q_21_0">
-<button class="btn  btn-secondary"    id="Q_21_0_Btn"  onclick="CheckMCAnswer(21,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_21_0_Btn"  onclick="CheckMCAnswer(21,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_21_1">
-<button class="btn  btn-secondary"    id="Q_21_1_Btn"  onclick="CheckMCAnswer(21,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_21_1_Btn"  onclick="CheckMCAnswer(21,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_21_2">
-<button class="btn  btn-secondary"    id="Q_21_2_Btn"  onclick="CheckMCAnswer(21,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_21_2_Btn"  onclick="CheckMCAnswer(21,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_21_3">
-<button class="btn  btn-secondary"    id="Q_21_3_Btn"  onclick="CheckMCAnswer(21,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_21_3_Btn"  onclick="CheckMCAnswer(21,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -2889,16 +2891,16 @@ function CheckFinished(){
 <div class="QuestionText">The United States <strong>(A) receives</strong> a large <strong>(B) amount</strong> of revenue from <strong>(C) taxation</strong> <strong>(D) of a</strong> tobacco products.</div>
 <ol class="MCAnswers">
 <li id="Q_22_0">
-<button class="btn  btn-secondary"    id="Q_22_0_Btn"  onclick="CheckMCAnswer(22,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_22_0_Btn"  onclick="CheckMCAnswer(22,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_22_1">
-<button class="btn  btn-secondary"    id="Q_22_1_Btn"  onclick="CheckMCAnswer(22,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_22_1_Btn"  onclick="CheckMCAnswer(22,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_22_2">
-<button class="btn  btn-secondary"    id="Q_22_2_Btn"  onclick="CheckMCAnswer(22,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_22_2_Btn"  onclick="CheckMCAnswer(22,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_22_3">
-<button class="btn  btn-secondary"    id="Q_22_3_Btn"  onclick="CheckMCAnswer(22,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_22_3_Btn"  onclick="CheckMCAnswer(22,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -2906,16 +2908,16 @@ function CheckFinished(){
 <div class="QuestionText"><strong>(A) Much</strong> fats are composed of one molecule of glycerin <strong>(B) combined with</strong> three molecules of <strong>(C) fatty</strong> <strong>(D) acids.</strong></div>
 <ol class="MCAnswers">
 <li id="Q_23_0">
-<button class="btn  btn-secondary"    id="Q_23_0_Btn"  onclick="CheckMCAnswer(23,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_23_0_Btn"  onclick="CheckMCAnswer(23,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_23_1">
-<button class="btn  btn-secondary"    id="Q_23_1_Btn"  onclick="CheckMCAnswer(23,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_23_1_Btn"  onclick="CheckMCAnswer(23,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_23_2">
-<button class="btn  btn-secondary"    id="Q_23_2_Btn"  onclick="CheckMCAnswer(23,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_23_2_Btn"  onclick="CheckMCAnswer(23,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_23_3">
-<button class="btn  btn-secondary"    id="Q_23_3_Btn"  onclick="CheckMCAnswer(23,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_23_3_Btn"  onclick="CheckMCAnswer(23,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -2923,16 +2925,16 @@ function CheckFinished(){
 <div class="QuestionText">The <strong>(A) capital</strong> of the Confederacy was <strong>(B) originally</strong> in Mobile, but <strong>(C) they were</strong> <strong>(D) moved</strong> to Richmond.</div>
 <ol class="MCAnswers">
 <li id="Q_24_0">
-<button class="btn  btn-secondary"    id="Q_24_0_Btn"  onclick="CheckMCAnswer(24,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_24_0_Btn"  onclick="CheckMCAnswer(24,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_24_1">
-<button class="btn  btn-secondary"    id="Q_24_1_Btn"  onclick="CheckMCAnswer(24,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_24_1_Btn"  onclick="CheckMCAnswer(24,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_24_2">
-<button class="btn  btn-secondary"    id="Q_24_2_Btn"  onclick="CheckMCAnswer(24,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_24_2_Btn"  onclick="CheckMCAnswer(24,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_24_3">
-<button class="btn  btn-secondary"    id="Q_24_3_Btn"  onclick="CheckMCAnswer(24,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_24_3_Btn"  onclick="CheckMCAnswer(24,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -2940,16 +2942,16 @@ function CheckFinished(){
 <div class="QuestionText">A pearl develops <strong>(A) when</strong> a tiny grain of sand or stone or some <strong>(B) another</strong> <strong>(C) irritant</strong> accidentally <strong>(D) enters into</strong> the shell of a pearl oyster.</div>
 <ol class="MCAnswers">
 <li id="Q_25_0">
-<button class="btn  btn-secondary"    id="Q_25_0_Btn"  onclick="CheckMCAnswer(25,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_25_0_Btn"  onclick="CheckMCAnswer(25,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_25_1">
-<button class="btn  btn-secondary"    id="Q_25_1_Btn"  onclick="CheckMCAnswer(25,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_25_1_Btn"  onclick="CheckMCAnswer(25,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_25_2">
-<button class="btn  btn-secondary"    id="Q_25_2_Btn"  onclick="CheckMCAnswer(25,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_25_2_Btn"  onclick="CheckMCAnswer(25,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_25_3">
-<button class="btn  btn-secondary"    id="Q_25_3_Btn"  onclick="CheckMCAnswer(25,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_25_3_Btn"  onclick="CheckMCAnswer(25,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -2957,16 +2959,16 @@ function CheckFinished(){
 <div class="QuestionText">The English horn is <strong>(A) an alto</strong> oboe with a <strong>(B) pitch</strong> one-fifth lower <strong>(C) than</strong> <strong>(D) the</strong> soprano oboe.</div>
 <ol class="MCAnswers">
 <li id="Q_26_0">
-<button class="btn  btn-secondary"    id="Q_26_0_Btn"  onclick="CheckMCAnswer(26,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_26_0_Btn"  onclick="CheckMCAnswer(26,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_26_1">
-<button class="btn  btn-secondary"    id="Q_26_1_Btn"  onclick="CheckMCAnswer(26,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_26_1_Btn"  onclick="CheckMCAnswer(26,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_26_2">
-<button class="btn  btn-secondary"    id="Q_26_2_Btn"  onclick="CheckMCAnswer(26,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_26_2_Btn"  onclick="CheckMCAnswer(26,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_26_3">
-<button class="btn  btn-secondary"    id="Q_26_3_Btn"  onclick="CheckMCAnswer(26,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_26_3_Btn"  onclick="CheckMCAnswer(26,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -2974,16 +2976,16 @@ function CheckFinished(){
 <div class="QuestionText">In the Milky Way galaxy, the <strong>(A) most</strong> <strong>(B) recent</strong> observed supernova <strong>(C) appeared</strong> <strong>(D) in</strong> 1604. </div>
 <ol class="MCAnswers">
 <li id="Q_27_0">
-<button class="btn  btn-secondary"    id="Q_27_0_Btn"  onclick="CheckMCAnswer(27,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_27_0_Btn"  onclick="CheckMCAnswer(27,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_27_1">
-<button class="btn  btn-secondary"    id="Q_27_1_Btn"  onclick="CheckMCAnswer(27,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_27_1_Btn"  onclick="CheckMCAnswer(27,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_27_2">
-<button class="btn  btn-secondary"    id="Q_27_2_Btn"  onclick="CheckMCAnswer(27,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_27_2_Btn"  onclick="CheckMCAnswer(27,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_27_3">
-<button class="btn  btn-secondary"    id="Q_27_3_Btn"  onclick="CheckMCAnswer(27,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_27_3_Btn"  onclick="CheckMCAnswer(27,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -2991,16 +2993,16 @@ function CheckFinished(){
 <div class="QuestionText">Never in the history of <strong>(A) humanity</strong> <strong>(B) has</strong> there been more people <strong>(C) living</strong> on this,this.id <strong>(D) relatively</strong> small planet.</div>
 <ol class="MCAnswers">
 <li id="Q_28_0">
-<button class="btn  btn-secondary"    id="Q_28_0_Btn"  onclick="CheckMCAnswer(28,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_28_0_Btn"  onclick="CheckMCAnswer(28,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_28_1">
-<button class="btn  btn-secondary"    id="Q_28_1_Btn"  onclick="CheckMCAnswer(28,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_28_1_Btn"  onclick="CheckMCAnswer(28,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_28_2">
-<button class="btn  btn-secondary"    id="Q_28_2_Btn"  onclick="CheckMCAnswer(28,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_28_2_Btn"  onclick="CheckMCAnswer(28,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_28_3">
-<button class="btn  btn-secondary"    id="Q_28_3_Btn"  onclick="CheckMCAnswer(28,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_28_3_Btn"  onclick="CheckMCAnswer(28,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -3008,16 +3010,16 @@ function CheckFinished(){
 <div class="QuestionText">Because of the <strong>(A) mobility</strong> of Americans today, it is <strong>(B) difficult</strong> for <strong>(C) they</strong> to put down <strong>(D) real roots.</strong></div>
 <ol class="MCAnswers">
 <li id="Q_29_0">
-<button class="btn  btn-secondary"    id="Q_29_0_Btn"  onclick="CheckMCAnswer(29,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_29_0_Btn"  onclick="CheckMCAnswer(29,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_29_1">
-<button class="btn  btn-secondary"    id="Q_29_1_Btn"  onclick="CheckMCAnswer(29,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_29_1_Btn"  onclick="CheckMCAnswer(29,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_29_2">
-<button class="btn  btn-secondary"    id="Q_29_2_Btn"  onclick="CheckMCAnswer(29,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_29_2_Btn"  onclick="CheckMCAnswer(29,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_29_3">
-<button class="btn  btn-secondary"    id="Q_29_3_Btn"  onclick="CheckMCAnswer(29,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_29_3_Btn"  onclick="CheckMCAnswer(29,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -3025,16 +3027,16 @@ function CheckFinished(){
 <div class="QuestionText"><strong>(A) For</strong> five years after the Civil War, Robert E. Lee served <strong>(B) to</strong> president of Washington College, <strong>(C) which</strong> was <strong>(D) later</strong> called Washington and Lee.</div>
 <ol class="MCAnswers">
 <li id="Q_30_0">
-<button class="btn  btn-secondary"    id="Q_30_0_Btn"  onclick="CheckMCAnswer(30,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_30_0_Btn"  onclick="CheckMCAnswer(30,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_30_1">
-<button class="btn  btn-secondary"    id="Q_30_1_Btn"  onclick="CheckMCAnswer(30,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_30_1_Btn"  onclick="CheckMCAnswer(30,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_30_2">
-<button class="btn  btn-secondary"    id="Q_30_2_Btn"  onclick="CheckMCAnswer(30,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_30_2_Btn"  onclick="CheckMCAnswer(30,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_30_3">
-<button class="btn  btn-secondary"    id="Q_30_3_Btn"  onclick="CheckMCAnswer(30,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_30_3_Btn"  onclick="CheckMCAnswer(30,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -3042,16 +3044,16 @@ function CheckFinished(){
 <div class="QuestionText">The <strong>(A) number</strong> of wild horses on Assateague <strong>(B) is</strong> increasing lately, <strong>(C) resulting</strong> in overgrazed marsh and dune <strong>(D) grasses.</strong></div>
 <ol class="MCAnswers">
 <li id="Q_31_0">
-<button class="btn  btn-secondary"    id="Q_31_0_Btn"  onclick="CheckMCAnswer(31,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_31_0_Btn"  onclick="CheckMCAnswer(31,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_31_1">
-<button class="btn  btn-secondary"    id="Q_31_1_Btn"  onclick="CheckMCAnswer(31,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_31_1_Btn"  onclick="CheckMCAnswer(31,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_31_2">
-<button class="btn  btn-secondary"    id="Q_31_2_Btn"  onclick="CheckMCAnswer(31,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_31_2_Btn"  onclick="CheckMCAnswer(31,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_31_3">
-<button class="btn  btn-secondary"    id="Q_31_3_Btn"  onclick="CheckMCAnswer(31,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_31_3_Btn"  onclick="CheckMCAnswer(31,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -3059,16 +3061,16 @@ function CheckFinished(){
 <div class="QuestionText"><strong>(A) Hypnoses</strong> was <strong>(B) successfully</strong> used <strong>(C) during</strong> World War II to treat <strong>(D) battle fatigue.</strong></div>
 <ol class="MCAnswers">
 <li id="Q_32_0">
-<button class="btn  btn-secondary"    id="Q_32_0_Btn"  onclick="CheckMCAnswer(32,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_32_0_Btn"  onclick="CheckMCAnswer(32,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_32_1">
-<button class="btn  btn-secondary"    id="Q_32_1_Btn"  onclick="CheckMCAnswer(32,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_32_1_Btn"  onclick="CheckMCAnswer(32,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_32_2">
-<button class="btn  btn-secondary"    id="Q_32_2_Btn"  onclick="CheckMCAnswer(32,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_32_2_Btn"  onclick="CheckMCAnswer(32,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_32_3">
-<button class="btn  btn-secondary"    id="Q_32_3_Btn"  onclick="CheckMCAnswer(32,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_32_3_Btn"  onclick="CheckMCAnswer(32,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -3076,16 +3078,16 @@ function CheckFinished(){
 <div class="QuestionText">The lobster, <strong>(A) like</strong> <strong>(B) many</strong> crustaceans, can cast off a <strong>(C) damaging</strong> appendage and regenerate a new appendage to nearly <strong>(D) normal</strong> size.</div>
 <ol class="MCAnswers">
 <li id="Q_33_0">
-<button class="btn  btn-secondary"    id="Q_33_0_Btn"  onclick="CheckMCAnswer(33,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_33_0_Btn"  onclick="CheckMCAnswer(33,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_33_1">
-<button class="btn  btn-secondary"    id="Q_33_1_Btn"  onclick="CheckMCAnswer(33,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_33_1_Btn"  onclick="CheckMCAnswer(33,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_33_2">
-<button class="btn  btn-secondary"    id="Q_33_2_Btn"  onclick="CheckMCAnswer(33,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_33_2_Btn"  onclick="CheckMCAnswer(33,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_33_3">
-<button class="btn  btn-secondary"    id="Q_33_3_Btn"  onclick="CheckMCAnswer(33,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_33_3_Btn"  onclick="CheckMCAnswer(33,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -3093,16 +3095,16 @@ function CheckFinished(){
 <div class="QuestionText">Humans <strong>(A) develop normally</strong> twenty <strong>(B) primary</strong>, <strong>(C) or</strong> deciduous, teeth and thirty-two <strong>(D) permanent</strong> ones.</div>
 <ol class="MCAnswers">
 <li id="Q_34_0">
-<button class="btn  btn-secondary"    id="Q_34_0_Btn"  onclick="CheckMCAnswer(34,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_34_0_Btn"  onclick="CheckMCAnswer(34,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_34_1">
-<button class="btn  btn-secondary"    id="Q_34_1_Btn"  onclick="CheckMCAnswer(34,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_34_1_Btn"  onclick="CheckMCAnswer(34,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_34_2">
-<button class="btn  btn-secondary"    id="Q_34_2_Btn"  onclick="CheckMCAnswer(34,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_34_2_Btn"  onclick="CheckMCAnswer(34,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_34_3">
-<button class="btn  btn-secondary"    id="Q_34_3_Btn"  onclick="CheckMCAnswer(34,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_34_3_Btn"  onclick="CheckMCAnswer(34,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -3110,16 +3112,16 @@ function CheckFinished(){
 <div class="QuestionText"><strong>(A) The</strong> curricula of American public schools <strong>(B) are</strong> set in individual states; they <strong>(C) do not determine</strong> by the <strong>(D) federal</strong> government.</div>
 <ol class="MCAnswers">
 <li id="Q_35_0">
-<button class="btn  btn-secondary"    id="Q_35_0_Btn"  onclick="CheckMCAnswer(35,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_35_0_Btn"  onclick="CheckMCAnswer(35,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_35_1">
-<button class="btn  btn-secondary"    id="Q_35_1_Btn"  onclick="CheckMCAnswer(35,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_35_1_Btn"  onclick="CheckMCAnswer(35,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_35_2">
-<button class="btn  btn-secondary"    id="Q_35_2_Btn"  onclick="CheckMCAnswer(35,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_35_2_Btn"  onclick="CheckMCAnswer(35,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_35_3">
-<button class="btn  btn-secondary"    id="Q_35_3_Btn"  onclick="CheckMCAnswer(35,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_35_3_Btn"  onclick="CheckMCAnswer(35,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -3127,16 +3129,16 @@ function CheckFinished(){
 <div class="QuestionText">The fact that the sophisticated technology <strong>(A) has become</strong> part of <strong>(B) revolution</strong> in travel <strong>(C) delivery</strong> systems has not made travel schedules <strong>(D) less</strong> hectic.</div>
 <ol class="MCAnswers">
 <li id="Q_36_0">
-<button class="btn  btn-secondary"    id="Q_36_0_Btn"  onclick="CheckMCAnswer(36,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_36_0_Btn"  onclick="CheckMCAnswer(36,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_36_1">
-<button class="btn  btn-secondary"    id="Q_36_1_Btn"  onclick="CheckMCAnswer(36,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_36_1_Btn"  onclick="CheckMCAnswer(36,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_36_2">
-<button class="btn  btn-secondary"    id="Q_36_2_Btn"  onclick="CheckMCAnswer(36,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_36_2_Btn"  onclick="CheckMCAnswer(36,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_36_3">
-<button class="btn  btn-secondary"    id="Q_36_3_Btn"  onclick="CheckMCAnswer(36,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_36_3_Btn"  onclick="CheckMCAnswer(36,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -3144,16 +3146,16 @@ function CheckFinished(){
 <div class="QuestionText">Balanchine's <strong>(A) plotless</strong> ballets, <strong>(B) such</strong> Jewels and The Four Temperaments, <strong>(C) present</strong> dance <strong>(D) purely</strong> as a celebration of the movement of the human body.</div>
 <ol class="MCAnswers">
 <li id="Q_37_0">
-<button class="btn  btn-secondary"    id="Q_37_0_Btn"  onclick="CheckMCAnswer(37,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_37_0_Btn"  onclick="CheckMCAnswer(37,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_37_1">
-<button class="btn  btn-secondary"    id="Q_37_1_Btn"  onclick="CheckMCAnswer(37,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_37_1_Btn"  onclick="CheckMCAnswer(37,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_37_2">
-<button class="btn  btn-secondary"    id="Q_37_2_Btn"  onclick="CheckMCAnswer(37,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_37_2_Btn"  onclick="CheckMCAnswer(37,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_37_3">
-<button class="btn  btn-secondary"    id="Q_37_3_Btn"  onclick="CheckMCAnswer(37,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_37_3_Btn"  onclick="CheckMCAnswer(37,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -3161,16 +3163,16 @@ function CheckFinished(){
 <div class="QuestionText">In a <strong>(A) solar battery</strong>, a photosensitive <strong>(B) semiconducting</strong> substance <strong>(C) such as</strong> silicon crystal is the source of <strong>(D) electrician.</strong></div>
 <ol class="MCAnswers">
 <li id="Q_38_0">
-<button class="btn  btn-secondary"    id="Q_38_0_Btn"  onclick="CheckMCAnswer(38,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_38_0_Btn"  onclick="CheckMCAnswer(38,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_38_1">
-<button class="btn  btn-secondary"    id="Q_38_1_Btn"  onclick="CheckMCAnswer(38,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_38_1_Btn"  onclick="CheckMCAnswer(38,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_38_2">
-<button class="btn  btn-secondary"    id="Q_38_2_Btn"  onclick="CheckMCAnswer(38,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_38_2_Btn"  onclick="CheckMCAnswer(38,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_38_3">
-<button class="btn  btn-secondary"    id="Q_38_3_Btn"  onclick="CheckMCAnswer(38,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_38_3_Btn"  onclick="CheckMCAnswer(38,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -3178,16 +3180,16 @@ function CheckFinished(){
 <div class="QuestionText"><strong>(A) In early days</strong>, hydrochloric acid was <strong>(B) done</strong> by <strong>(C) heating</strong> a mixture of sodium chloride <strong>(D) with</strong> iron sulfate.</div>
 <ol class="MCAnswers">
 <li id="Q_39_0">
-<button class="btn  btn-secondary"    id="Q_39_0_Btn"  onclick="CheckMCAnswer(39,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_39_0_Btn"  onclick="CheckMCAnswer(39,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_39_1">
-<button class="btn  btn-secondary"    id="Q_39_1_Btn"  onclick="CheckMCAnswer(39,1,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_39_1_Btn"  onclick="CheckMCAnswer(39,1,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_39_2">
-<button class="btn  btn-secondary"    id="Q_39_2_Btn"  onclick="CheckMCAnswer(39,2,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_39_2_Btn"  onclick="CheckMCAnswer(39,2,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 <li id="Q_39_3">
-<button class="btn  btn-secondary"    id="Q_39_3_Btn"  onclick="CheckMCAnswer(39,3,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>
+<button class="btn  btn-secondary"    id="Q_39_3_Btn"  onclick="CheckMCAnswer(39,3,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
 </li>
 </ol>
 </li>
@@ -3203,7 +3205,6 @@ function CheckFinished(){
 	<br>
 </div>
 
-<ul id="pagination"></ul>
 
 
 <!-- Modal boots-->
