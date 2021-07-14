@@ -814,8 +814,13 @@ $(document).ready(function(){
     stepTime: 60,
     format: 'mm:ss',
     startTime: "25:00",
-    timerEnd: function() { alert('end!!'); },
-    image: "toefl/digits.png"
+    timerEnd: function() { document.getElementById('xyz').play(); $( "#timeleft" ).show(); },
+    image: "toefl/digits.png",
+	start:'false'
+  });
+
+  $("#startButton").click(function (e) {
+	$('#counter').start();
   });
 
 });
@@ -827,7 +832,6 @@ function Mensaje(Feedback){
 	$("#instructions3").modal("show");
 
 }
-
 
 $(document).keydown(function(e){
 
@@ -1320,7 +1324,7 @@ var ShowCompletedSoFar = true;
 
 var ContinuousScoring = true;
 var CorrectFirstTime = 'Questions answered correctly first time: ';
-var ToeflScore = 'TOEFL Listening Score: ';
+var ToeflScore = 'TOEFL Grammar Score: ';
 var ShowCorrectFirstTime = true;
 var ShuffleQs = false;
 var ShuffleAs = false;
@@ -2468,8 +2472,8 @@ function CheckFinished(){
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		<div class="navbar-nav">
-		  <a class="nav-link active" aria-current="page" href="#">Listening</a>
-		  <a class="nav-link disabled" href="#">Grammar</a>
+		  <a class="nav-link disabled" href="#">Listening</a>
+		  <a class="nav-link active" aria-current="page" href="#">Grammar</a>
 		  <a class="nav-link disabled" href="#">Reading</a>
 		</div>
 	  </div>
@@ -2486,14 +2490,14 @@ function CheckFinished(){
 
 
 <div class="container">
- 
+ <!--
 <div id="QNav" class="QuestionNavigation">
 <p style="text-align: left;" class=" mb-4">
 <button id="ShowMethodButton" class="FuncButton" onclick="ShowHideQuestions(); return false;">Show all questions</button>
 </p>
 </div>
-
-
+-->
+<br>
 <ol class="QuizQuestions" id="Questions">
 <li class="container" id="Q_0" style="display: none;">
 <div class="QuestionText">
@@ -2669,7 +2673,7 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_10" style="display: none;">
-<div class="QuestionText">Only when air and water seep through its<br />outer coat ______.</div>
+<div class="QuestionText">Only when air and water seep through its outer coat ______.</div>
 <ol class="MCAnswers">
 <li id="Q_10_0">
 <button class="btn  btn-secondary"    id="Q_10_0_Btn"  onclick="CheckMCAnswer(10,0,this,this.id)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;does a seed germinate
@@ -3190,10 +3194,8 @@ function CheckFinished(){
 	<span id="QNumReadout">&nbsp;</span>
 			
 	<button class="btn btn-primary btn-secondary"  onclick="ChangeQ(1); return false;"> >> </button>
-	<br />
-
+	<br>
 </div>
-
 
 <!-- Modal boots-->
   <div class="modal fade" id="instructions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -3208,7 +3210,7 @@ function CheckFinished(){
 			<p class="fw-light mb-2 text-center">** Puedes usar las flechas de tu teclado para cambiar de pregunta </p>
 		</div>
 		<div class="modal-footer">
-			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			<button type="button" id="startButton" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 		</div>
 	  </div>
 	</div>
@@ -3244,11 +3246,11 @@ function CheckFinished(){
   
 </div>
 </div>
+<h2 id="timeleft" class="text-danger" style="display: none;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;TIME OVER!</h2>
 
-<div align="right">
-	<div id="counter" align="right"></div>
-
-</div>
+<div id="counter"></div>
+<audio id="xyz" src="audios/Usb-connection-sound-effect.mp3" preload="auto"></audio>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,32L0,128L36.9,128L36.9,32L73.8,32L73.8,192L110.8,192L110.8,64L147.7,64L147.7,96L184.6,96L184.6,0L221.5,0L221.5,288L258.5,288L258.5,224L295.4,224L295.4,128L332.3,128L332.3,160L369.2,160L369.2,224L406.2,224L406.2,224L443.1,224L443.1,96L480,96L480,64L516.9,64L516.9,160L553.8,160L553.8,96L590.8,96L590.8,320L627.7,320L627.7,256L664.6,256L664.6,128L701.5,128L701.5,288L738.5,288L738.5,224L775.4,224L775.4,96L812.3,96L812.3,160L849.2,160L849.2,224L886.2,224L886.2,288L923.1,288L923.1,288L960,288L960,96L996.9,96L996.9,160L1033.8,160L1033.8,96L1070.8,96L1070.8,288L1107.7,288L1107.7,288L1144.6,288L1144.6,32L1181.5,32L1181.5,64L1218.5,64L1218.5,64L1255.4,64L1255.4,160L1292.3,160L1292.3,64L1329.2,64L1329.2,0L1366.2,0L1366.2,128L1403.1,128L1403.1,128L1440,128L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z"></path></svg>
 <!-- BeginBottomNavButtons -->
 
 <!--
