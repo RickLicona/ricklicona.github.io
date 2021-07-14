@@ -1318,7 +1318,7 @@ var YourScoreIs = 'Your score is ';
 var GoNextQuestion = 'Go to the next question!'
 //New for 6.2.2.0
 var CompletedSoFar = 'Completed questions:';
-var ExerciseCompleted = 'You have completed the listening part.';
+var ExerciseCompleted = 'You have completed the grammar part.';
 var ShowCompletedSoFar = true;
 
 var ContinuousScoring = true;
@@ -1719,8 +1719,8 @@ I[22][2] = '0';
 I[22][3] = new Array();
 I[22][3][0] = new Array('A','',0,0,1);
 I[22][3][1] = new Array('B','',0,0,1);
-I[22][3][2] = new Array('C','',1,100,1);
-I[22][3][3] = new Array('D','',0,0,1);
+I[22][3][2] = new Array('C','',0,0,1);
+I[22][3][3] = new Array('D','',1,100,1);
 I[23] = new Array();
 I[23][0] = 100;
 I[23][1] = '';
@@ -2213,39 +2213,39 @@ function CheckFinished(){
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 1:
-					score = 24;
+					score = 21;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 2:
-					score = 25;
+					score = 22;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;					
 				case 3:
-					score = 27;
+					score = 24;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;						
 				case 4:
-					score = 28;
+					score = 25;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 5:
-					score = 29;
+					score = 26;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 6:
-					score = 30;
+					score = 28;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 7:
-					score = 31;
+					score = 29;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 8:
-					score = 32;
+					score = 30;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;		
 				case 9:
-					score = 33;
+					score = 32;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 10:
@@ -2253,7 +2253,7 @@ function CheckFinished(){
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 11:
-					score = 35;
+					score = 34;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;	
 				case 12:
@@ -2265,11 +2265,11 @@ function CheckFinished(){
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 14:
-					score = 39;
+					score = 38;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;											
 				case 15:
-					score = 40;
+					score = 39;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 16:
@@ -2289,129 +2289,89 @@ function CheckFinished(){
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 20:
-					score = 43;
+					score = 44;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;	
 				case 21:
-					score = 44;
-					FB += '<br />' + ToeflScore + ' ' + score;
-					break;
-				case 22:
-					score = 44;
-					FB += '<br />' + ToeflScore + ' ' + score;
-					break;
-				case 23:
 					score = 45;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
-				case 24:
+				case 22:
 					score = 46;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 23:
+					score = 47;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;
+				case 24:
+					score = 48;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 25:
-					score = 46;
+					score = 49;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 26:
-					score = 47;
+					score = 50;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;	
 				case 27:
-					score = 47;
+					score = 51;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 28:
-					score = 48;
+					score = 52;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;		
 				case 29:
-					score = 48;
+					score = 54;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 30:
-					score = 49;
+					score = 54;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 31:
-					score = 49;
+					score = 55;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;	
 				case 32:
-					score = 50;
+					score = 56;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
 				case 33:
-					score = 51;
-					FB += '<br />' + ToeflScore + ' ' + score;
-					break;
-				case 34:
-					score = 51;
-					FB += '<br />' + ToeflScore + ' ' + score;
-					break;	
-				case 35:
-					score = 52;
-					FB += '<br />' + ToeflScore + ' ' + score;
-					break;
-				case 36:
-					score = 53;
-					FB += '<br />' + ToeflScore + ' ' + score;
-					break;
-				case 37:
-					score = 54;
-					FB += '<br />' + ToeflScore + ' ' + score;
-					break;		
-				case 38:
-					score = 55;
-					FB += '<br />' + ToeflScore + ' ' + score;
-					break;
-				case 39:
-					score = 55;
-					FB += '<br />' + ToeflScore + ' ' + score;
-					break;
-				case 40:
-					score = 56;
-					FB += '<br />' + ToeflScore + ' ' + score;
-					break;					
-				case 41:
-					score = 57;
-					FB += '<br />' + ToeflScore + ' ' + score;
-					break;
-				case 42:
 					score = 58;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
-				case 43:
+				case 34:
 					score = 59;
 					FB += '<br />' + ToeflScore + ' ' + score;
-					break;					
-				case 44:
+					break;	
+				case 35:
 					score = 60;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
-				case 45:
-					score = 61;
+				case 36:
+					score = 62;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
-				case 46:
-					score = 61;
-					FB += '<br />' + ToeflScore + ' ' + score;
-					break;
-				case 47:
-					score = 63;
-					FB += '<br />' + ToeflScore + ' ' + score;
-					break;
-				case 48:
+				case 37:
 					score = 64;
 					FB += '<br />' + ToeflScore + ' ' + score;
-					break;
-				case 49:
+					break;		
+				case 38:
 					score = 66;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
-				case 50:
-					score = 68;
+				case 39:
+					score = 67;
 					FB += '<br />' + ToeflScore + ' ' + score;
 					break;
+				case 40:
+					score = 68;
+					FB += '<br />' + ToeflScore + ' ' + score;
+					break;					
 			}
 		}
 		
@@ -2759,14 +2719,14 @@ function CheckFinished(){
 <li class="container" id="Q_15" style="display: none;">
 <div class="QuestionText">
 	<h2 class="text-center">WRITTEN EXPRESSION</h2>
-	<button type="button" id="transcript_16" class="btn btn-primary position-relative">
+	<button type="button" id="transcript_15" class="btn btn-primary position-relative">
 		See/hide correction
 		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
 		  <span class="visually-hidden">New alerts</span>
 		</span>
 	</button>
-	<div id="trans_16" class="alert alert-warning fst-italic" style= "display:none;">
-		<p class="mb-1">N: Listen as a man and woman discuss a
+	<div id="trans_15" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">travel</p>
 	</div>
 	<br>
 	<strong>(A) Light</strong> can <strong>(B) travels</strong> from the Sun to the Earth <strong>(C) in </strong> eight minutes and twenty <strong>(D) seconds.</strong><br /></div>
@@ -2786,7 +2746,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_16" style="display: none;">
-<div class="QuestionText">Every human <strong>(A) typically </strong><strong>(B) have</strong> twenty-three pairs of chromosomes in <strong>(C) most</strong> <strong>(D) cells.</strong></div>
+<div class="QuestionText">
+	<button type="button" id="transcript_16" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_16" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">has</p>
+	</div>
+	<br>
+	Every human <strong>(A) typically </strong><strong>(B) have</strong> twenty-three pairs of chromosomes in <strong>(C) most</strong> <strong>(D) cells.</strong></div>
 <ol class="MCAnswers">
 <li id="Q_16_0">
 <button class="btn  btn-secondary"    id="Q_16_0_Btn"  onclick="CheckMCAnswer(16,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -2803,7 +2774,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_17" style="display: none;">
-<div class="QuestionText"><strong>(A) Most</strong> sedimentary rocks <strong>(B) start forming</strong> when grains of clay, silt, or <strong>(C) sandy</strong> settle in river valleys <strong>(D) or on </strong>the bottoms of lakes and oceans.</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_17" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_17" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">sand</p>
+	</div>
+	<br>
+	<strong>(A) Most</strong> sedimentary rocks <strong>(B) start forming</strong> when grains of clay, silt, or <strong>(C) sandy</strong> settle in river valleys <strong>(D) or on </strong>the bottoms of lakes and oceans.</div>
 <ol class="MCAnswers">
 <li id="Q_17_0">
 <button class="btn  btn-secondary"    id="Q_17_0_Btn"  onclick="CheckMCAnswer(17,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -2820,7 +2802,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_18" style="display: none;">
-<div class="QuestionText">The total thickness of the ventricular <strong>(A) walls</strong> of the heart <strong>(B) are </strong><strong>(C) about</strong> three times <strong>(D) that</strong> of the atria.</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_18" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_18" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">is</p>
+	</div>
+	<br>
+	The total thickness of the ventricular <strong>(A) walls</strong> of the heart <strong>(B) are </strong><strong>(C) about</strong> three times <strong>(D) that</strong> of the atria.</div>
 <ol class="MCAnswers">
 <li id="Q_18_0">
 <button class="btn  btn-secondary"    id="Q_18_0_Btn"  onclick="CheckMCAnswer(18,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -2837,7 +2830,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_19" style="display: none;">
-<div class="QuestionText">The type of jazz <strong>(A) known </strong>as "swing" was <strong>(B) introduced</strong> by Duke Ellington when <strong>(C) he</strong> wrote and <strong>(D) records</strong> "It Don't Mean a Thing If It Ain't Got That Swing."</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_19" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_19" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">recorded</p>
+	</div>
+	<br>
+	The type of jazz <strong>(A) known </strong>as "swing" was <strong>(B) introduced</strong> by Duke Ellington when <strong>(C) he</strong> wrote and <strong>(D) records</strong> "It Don't Mean a Thing If It Ain't Got That Swing."</div>
 <ol class="MCAnswers">
 <li id="Q_19_0">
 <button class="btn  btn-secondary"    id="Q_19_0_Btn"  onclick="CheckMCAnswer(19,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -2854,7 +2858,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_20" style="display: none;">
-<div class="QuestionText">The bones of mammals, not <strong>(A) alike</strong><strong>  (B) those </strong>of the <strong>(C) other </strong>vertebrates, show a high degree of <strong>(D)differentiation.</strong></div>
+<div class="QuestionText">
+	<button type="button" id="transcript_20" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_20" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">like</p>
+	</div>
+	<br>
+	The bones of mammals, not <strong>(A) alike</strong><strong>  (B) those </strong>of the <strong>(C) other </strong>vertebrates, show a high degree of <strong>(D)differentiation.</strong></div>
 <ol class="MCAnswers">
 <li id="Q_20_0">
 <button class="btn  btn-secondary"    id="Q_20_0_Btn"  onclick="CheckMCAnswer(20,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -2871,7 +2886,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_21" style="display: none;">
-<div class="QuestionText"><strong>(A) The</strong> neocortex has <strong>(B) evolved</strong> more recently <strong>(C) then</strong> <strong>(D) other</strong> layers of the brain.</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_21" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_21" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">than</p>
+	</div>
+	<br>
+	<strong>(A) The</strong> neocortex has <strong>(B) evolved</strong> more recently <strong>(C) then</strong> <strong>(D) other</strong> layers of the brain.</div>
 <ol class="MCAnswers">
 <li id="Q_21_0">
 <button class="btn  btn-secondary"    id="Q_21_0_Btn"  onclick="CheckMCAnswer(21,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -2888,7 +2914,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_22" style="display: none;">
-<div class="QuestionText">The United States <strong>(A) receives</strong> a large <strong>(B) amount</strong> of revenue from <strong>(C) taxation</strong> <strong>(D) of a</strong> tobacco products.</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_22" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_22" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">of</p>
+	</div>
+	<br>
+	The United States <strong>(A) receives</strong> a large <strong>(B) amount</strong> of revenue from <strong>(C) taxation</strong> <strong>(D) of a</strong> tobacco products.</div>
 <ol class="MCAnswers">
 <li id="Q_22_0">
 <button class="btn  btn-secondary"    id="Q_22_0_Btn"  onclick="CheckMCAnswer(22,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -2905,7 +2942,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_23" style="display: none;">
-<div class="QuestionText"><strong>(A) Much</strong> fats are composed of one molecule of glycerin <strong>(B) combined with</strong> three molecules of <strong>(C) fatty</strong> <strong>(D) acids.</strong></div>
+<div class="QuestionText">
+	<button type="button" id="transcript_23" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_23" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">Many</p>
+	</div>
+	<br>
+	<strong>(A) Much</strong> fats are composed of one molecule of glycerin <strong>(B) combined with</strong> three molecules of <strong>(C) fatty</strong> <strong>(D) acids.</strong></div>
 <ol class="MCAnswers">
 <li id="Q_23_0">
 <button class="btn  btn-secondary"    id="Q_23_0_Btn"  onclick="CheckMCAnswer(23,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -2922,7 +2970,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_24" style="display: none;">
-<div class="QuestionText">The <strong>(A) capital</strong> of the Confederacy was <strong>(B) originally</strong> in Mobile, but <strong>(C) they were</strong> <strong>(D) moved</strong> to Richmond.</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_24" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_24" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">it was</p>
+	</div>
+	<br>
+	The <strong>(A) capital</strong> of the Confederacy was <strong>(B) originally</strong> in Mobile, but <strong>(C) they were</strong> <strong>(D) moved</strong> to Richmond.</div>
 <ol class="MCAnswers">
 <li id="Q_24_0">
 <button class="btn  btn-secondary"    id="Q_24_0_Btn"  onclick="CheckMCAnswer(24,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -2939,7 +2998,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_25" style="display: none;">
-<div class="QuestionText">A pearl develops <strong>(A) when</strong> a tiny grain of sand or stone or some <strong>(B) another</strong> <strong>(C) irritant</strong> accidentally <strong>(D) enters into</strong> the shell of a pearl oyster.</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_25" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_25" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">other</p>
+	</div>
+	<br>
+	A pearl develops <strong>(A) when</strong> a tiny grain of sand or stone or some <strong>(B) another</strong> <strong>(C) irritant</strong> accidentally <strong>(D) enters into</strong> the shell of a pearl oyster.</div>
 <ol class="MCAnswers">
 <li id="Q_25_0">
 <button class="btn  btn-secondary"    id="Q_25_0_Btn"  onclick="CheckMCAnswer(25,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -2956,7 +3026,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_26" style="display: none;">
-<div class="QuestionText">The English horn is <strong>(A) an alto</strong> oboe with a <strong>(B) pitch</strong> one-fifth lower <strong>(C) than</strong> <strong>(D) the</strong> soprano oboe.</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_26" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_26" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">that of the</p>
+	</div>
+	<br>
+	The English horn is <strong>(A) an alto</strong> oboe with a <strong>(B) pitch</strong> one-fifth lower <strong>(C) than</strong> <strong>(D) the</strong> soprano oboe.</div>
 <ol class="MCAnswers">
 <li id="Q_26_0">
 <button class="btn  btn-secondary"    id="Q_26_0_Btn"  onclick="CheckMCAnswer(26,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -2973,7 +3054,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_27" style="display: none;">
-<div class="QuestionText">In the Milky Way galaxy, the <strong>(A) most</strong> <strong>(B) recent</strong> observed supernova <strong>(C) appeared</strong> <strong>(D) in</strong> 1604. </div>
+<div class="QuestionText">
+	<button type="button" id="transcript_27" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_27" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">recently</p>
+	</div>
+	<br>
+	In the Milky Way galaxy, the <strong>(A) most</strong> <strong>(B) recent</strong> observed supernova <strong>(C) appeared</strong> <strong>(D) in</strong> 1604. </div>
 <ol class="MCAnswers">
 <li id="Q_27_0">
 <button class="btn  btn-secondary"    id="Q_27_0_Btn"  onclick="CheckMCAnswer(27,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -2990,7 +3082,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_28" style="display: none;">
-<div class="QuestionText">Never in the history of <strong>(A) humanity</strong> <strong>(B) has</strong> there been more people <strong>(C) living</strong> on this,this.id <strong>(D) relatively</strong> small planet.</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_28" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_28" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">have</p>
+	</div>
+	<br>
+	Never in the history of <strong>(A) humanity</strong> <strong>(B) has</strong> there been more people <strong>(C) living</strong> on this,this.id <strong>(D) relatively</strong> small planet.</div>
 <ol class="MCAnswers">
 <li id="Q_28_0">
 <button class="btn  btn-secondary"    id="Q_28_0_Btn"  onclick="CheckMCAnswer(28,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -3007,7 +3110,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_29" style="display: none;">
-<div class="QuestionText">Because of the <strong>(A) mobility</strong> of Americans today, it is <strong>(B) difficult</strong> for <strong>(C) they</strong> to put down <strong>(D) real roots.</strong></div>
+<div class="QuestionText">
+	<button type="button" id="transcript_29" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_29" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">them</p>
+	</div>
+	<br>
+	Because of the <strong>(A) mobility</strong> of Americans today, it is <strong>(B) difficult</strong> for <strong>(C) they</strong> to put down <strong>(D) real roots.</strong></div>
 <ol class="MCAnswers">
 <li id="Q_29_0">
 <button class="btn  btn-secondary"    id="Q_29_0_Btn"  onclick="CheckMCAnswer(29,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -3024,7 +3138,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_30" style="display: none;">
-<div class="QuestionText"><strong>(A) For</strong> five years after the Civil War, Robert E. Lee served <strong>(B) to</strong> president of Washington College, <strong>(C) which</strong> was <strong>(D) later</strong> called Washington and Lee.</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_30" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_30" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">as</p>
+	</div>
+	<br>
+	<strong>(A) For</strong> five years after the Civil War, Robert E. Lee served <strong>(B) to</strong> president of Washington College, <strong>(C) which</strong> was <strong>(D) later</strong> called Washington and Lee.</div>
 <ol class="MCAnswers">
 <li id="Q_30_0">
 <button class="btn  btn-secondary"    id="Q_30_0_Btn"  onclick="CheckMCAnswer(30,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -3041,7 +3166,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_31" style="display: none;">
-<div class="QuestionText">The <strong>(A) number</strong> of wild horses on Assateague <strong>(B) is</strong> increasing lately, <strong>(C) resulting</strong> in overgrazed marsh and dune <strong>(D) grasses.</strong></div>
+<div class="QuestionText">
+	<button type="button" id="transcript_31" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_31" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">has been</p>
+	</div>
+	<br>
+	The <strong>(A) number</strong> of wild horses on Assateague <strong>(B) is</strong> increasing lately, <strong>(C) resulting</strong> in overgrazed marsh and dune <strong>(D) grasses.</strong></div>
 <ol class="MCAnswers">
 <li id="Q_31_0">
 <button class="btn  btn-secondary"    id="Q_31_0_Btn"  onclick="CheckMCAnswer(31,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -3058,7 +3194,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_32" style="display: none;">
-<div class="QuestionText"><strong>(A) Hypnoses</strong> was <strong>(B) successfully</strong> used <strong>(C) during</strong> World War II to treat <strong>(D) battle fatigue.</strong></div>
+<div class="QuestionText">
+	<button type="button" id="transcript_32" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_32" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">Hypnosis</p>
+	</div>
+	<br>
+	<strong>(A) Hypnoses</strong> was <strong>(B) successfully</strong> used <strong>(C) during</strong> World War II to treat <strong>(D) battle fatigue.</strong></div>
 <ol class="MCAnswers">
 <li id="Q_32_0">
 <button class="btn  btn-secondary"    id="Q_32_0_Btn"  onclick="CheckMCAnswer(32,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -3075,7 +3222,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_33" style="display: none;">
-<div class="QuestionText">The lobster, <strong>(A) like</strong> <strong>(B) many</strong> crustaceans, can cast off a <strong>(C) damaging</strong> appendage and regenerate a new appendage to nearly <strong>(D) normal</strong> size.</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_33" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_33" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">damaged</p>
+	</div>
+	<br>
+	The lobster, <strong>(A) like</strong> <strong>(B) many</strong> crustaceans, can cast off a <strong>(C) damaging</strong> appendage and regenerate a new appendage to nearly <strong>(D) normal</strong> size.</div>
 <ol class="MCAnswers">
 <li id="Q_33_0">
 <button class="btn  btn-secondary"    id="Q_33_0_Btn"  onclick="CheckMCAnswer(33,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -3092,7 +3250,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_34" style="display: none;">
-<div class="QuestionText">Humans <strong>(A) develop normally</strong> twenty <strong>(B) primary</strong>, <strong>(C) or</strong> deciduous, teeth and thirty-two <strong>(D) permanent</strong> ones.</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_34" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_34" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">normally develop</p>
+	</div>
+	<br>
+	Humans <strong>(A) develop normally</strong> twenty <strong>(B) primary</strong>, <strong>(C) or</strong> deciduous, teeth and thirty-two <strong>(D) permanent</strong> ones.</div>
 <ol class="MCAnswers">
 <li id="Q_34_0">
 <button class="btn  btn-secondary"    id="Q_34_0_Btn"  onclick="CheckMCAnswer(34,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -3109,7 +3278,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_35" style="display: none;">
-<div class="QuestionText"><strong>(A) The</strong> curricula of American public schools <strong>(B) are</strong> set in individual states; they <strong>(C) do not determine</strong> by the <strong>(D) federal</strong> government.</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_35" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_35" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">are not determined</p>
+	</div>
+	<br>
+	<strong>(A) The</strong> curricula of American public schools <strong>(B) are</strong> set in individual states; they <strong>(C) do not determine</strong> by the <strong>(D) federal</strong> government.</div>
 <ol class="MCAnswers">
 <li id="Q_35_0">
 <button class="btn  btn-secondary"    id="Q_35_0_Btn"  onclick="CheckMCAnswer(35,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -3126,7 +3306,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_36" style="display: none;">
-<div class="QuestionText">The fact that the sophisticated technology <strong>(A) has become</strong> part of <strong>(B) revolution</strong> in travel <strong>(C) delivery</strong> systems has not made travel schedules <strong>(D) less</strong> hectic.</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_36" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_36" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">a revolution</p>
+	</div>
+	<br>
+	The fact that the sophisticated technology <strong>(A) has become</strong> part of <strong>(B) revolution</strong> in travel <strong>(C) delivery</strong> systems has not made travel schedules <strong>(D) less</strong> hectic.</div>
 <ol class="MCAnswers">
 <li id="Q_36_0">
 <button class="btn  btn-secondary"    id="Q_36_0_Btn"  onclick="CheckMCAnswer(36,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -3143,7 +3334,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_37" style="display: none;">
-<div class="QuestionText">Balanchine's <strong>(A) plotless</strong> ballets, <strong>(B) such</strong> Jewels and The Four Temperaments, <strong>(C) present</strong> dance <strong>(D) purely</strong> as a celebration of the movement of the human body.</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_37" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_37" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">such as</p>
+	</div>
+	<br>
+	Balanchine's <strong>(A) plotless</strong> ballets, <strong>(B) such</strong> Jewels and The Four Temperaments, <strong>(C) present</strong> dance <strong>(D) purely</strong> as a celebration of the movement of the human body.</div>
 <ol class="MCAnswers">
 <li id="Q_37_0">
 <button class="btn  btn-secondary"    id="Q_37_0_Btn"  onclick="CheckMCAnswer(37,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -3160,7 +3362,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_38" style="display: none;">
-<div class="QuestionText">In a <strong>(A) solar battery</strong>, a photosensitive <strong>(B) semiconducting</strong> substance <strong>(C) such as</strong> silicon crystal is the source of <strong>(D) electrician.</strong></div>
+<div class="QuestionText">
+	<button type="button" id="transcript_38" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_38" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">electricity</p>
+	</div>
+	<br>
+	In a <strong>(A) solar battery</strong>, a photosensitive <strong>(B) semiconducting</strong> substance <strong>(C) such as</strong> silicon crystal is the source of <strong>(D) electrician.</strong></div>
 <ol class="MCAnswers">
 <li id="Q_38_0">
 <button class="btn  btn-secondary"    id="Q_38_0_Btn"  onclick="CheckMCAnswer(38,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
@@ -3177,7 +3390,18 @@ function CheckFinished(){
 </ol>
 </li>
 <li class="container" id="Q_39" style="display: none;">
-<div class="QuestionText"><strong>(A) In early days</strong>, hydrochloric acid was <strong>(B) done</strong> by <strong>(C) heating</strong> a mixture of sodium chloride <strong>(D) with</strong> iron sulfate.</div>
+<div class="QuestionText">
+	<button type="button" id="transcript_39" class="btn btn-primary position-relative">
+		See/hide correction
+		<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+		  <span class="visually-hidden">New alerts</span>
+		</span>
+	</button>
+	<div id="trans_39" class="alert alert-warning fst-italic" style= "display:none;">
+		<p class="mb-1 text-center">made</p>
+	</div>
+	<br>
+	<strong>(A) In early days</strong>, hydrochloric acid was <strong>(B) done</strong> by <strong>(C) heating</strong> a mixture of sodium chloride <strong>(D) with</strong> iron sulfate.</div>
 <ol class="MCAnswers">
 <li id="Q_39_0">
 <button class="btn  btn-secondary"    id="Q_39_0_Btn"  onclick="CheckMCAnswer(39,0,this,this.id)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
