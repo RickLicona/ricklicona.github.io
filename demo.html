@@ -1,0 +1,91 @@
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Sysend demo</title>
+    <link rel="canonical" href="https://jcubic.pl/sysend.php"/>
+    <script src="https://jcubic.pl/sysend.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      button, input {
+          margin: 5px;
+          padding: 2px 5px;
+      }
+    </style>
+    <script>
+window.onload = function() {
+    var pre = document.getElementsByTagName('pre')[0];
+    function message(msg) {
+        pre.innerHTML += msg + '\n';
+    }
+    sysend.on('foo', function(obj) {
+        message('just get event "foo" with message: ' + obj.message);
+    });
+    sysend.on('notification', function(obj) {
+        if (typeof obj == 'undefined') {
+            message('just got empty notification');
+        }
+    });
+    var a = document.getElementById('a');
+    var b = document.getElementById('b');
+    var input = document.getElementsByTagName('input')[0];
+    function trigger(event, data) {
+         var fn = emit.checked ? 'emit' : 'broadcast';
+         sysend[fn](event, data);
+    }
+    a.onclick = function() {
+        var obj = { message: input.value };
+        trigger('foo', obj);
+    };
+    b.onclick = function() {
+        trigger('notification');
+    };
+    sysend.proxy('https://jcubic.pl');
+    sysend.proxy('iframe.html');
+};
+    </script>
+    <script type="text/javascript" data-cfasync="false" src="//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js" data-shr-siteid="6d503d9769a878adc55ebee4698e4230" async="async"></script>
+    <style>
+.shareaholic-canvas li {
+    display: inline-block !important;
+}
+    </style>
+</head>
+<body>
+    <div id="share" style="float: right; margin-right: 146px;">
+      <div class="shareaholic-canvas" data-app="share_buttons" data-app-id="26226187"></div>
+    </div>
+    <h1>sysend.js demo</h1>
+    <h2>Open this page in two different tabs</h2>
+    <p>It will also work cross-domain if you open <a href="https://jcubic.pl/sysend.php">this page</a> (you can send message from jcubic.pl to terminal.jcubic.pl and vice versa)</p>
+    <p>Select the checkbox to invoke emit method, that will also send the message to same page.</p>
+    <input/>
+    <label for="emit">Emit<label>
+    <input type="checkbox" id="emit"/>
+    <button id="a">object {message}</button>
+    <button id="b">empty</button>
+    <pre>Messages:
+</pre>
+    <!-- github ribbon -->
+    <a href="https://github.com/jcubic/sysend.js" style="position: fixed; top: 0; right: 0; z-index:1000"><img style="border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="View sysend.js on GitHub"></a>
+      <!-- Start Open Web Analytics Tracker -->
+  <script type="text/javascript">
+  //<![CDATA[
+  var owa_baseUrl = 'https://stats.jcubic.pl/';
+  var owa_cmds = owa_cmds || [];
+  owa_cmds.push(['setSiteId', 'b0fda2fd267289c39125653957851823']);
+  owa_cmds.push(['trackPageView']);
+  owa_cmds.push(['trackClicks']);
+
+  (function() {
+      var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
+      owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
+      _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
+      var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
+  }());
+  //]]>
+  </script>
+  <!-- End Open Web Analytics Code -->
+  </body>
+</html>
